@@ -1,0 +1,49 @@
+BIG O TIME COMPLEXITY
+
+Big O Notation is one of the most necessary mathematical notations used in computer science 
+to measure an algorithm's efficiency. We can analyze how efficient an algorithm is from the amount of time, 
+storage, and other resources it takes to run the algorithm and a change in the input size. 
+Big O Notation in Data Structure tells us how well an algorithm will perform in a particular situation. 
+In other words, it gives an algorithm's upper-bound runtime or worst-case complexity. 
+
+
+better ---->O(1)
+            O(logn)
+            O(n)
+            O(n log n)
+            O(n^2)
+            O(n^3)
+Worse------>O(2n)
+
+
+
+Runtime complexity of some common algorithmic examples:
+Runtime Complexity for Linear Search – O(n)
+Runtime Complexity for Binary Search – O(log n)
+Runtime Complexity for Bubble Sort, Insertion Sort, Selection Sort, Bucket Sort - O(n^c).
+Runtime Complexity for Exponential algorithms like Tower of Hanoi - O(c^n).
+Runtime Complexity for Heap Sort, Merge Sort - O(n log n).
+
+
+// SPLICE VS SLICE---------------------------------------------
+
+/* 
+ 1) The splice() method returns the removed item(s) in an array and slice() method returns the selected element(s) in an array, as a new array object.
+ 2) The splice() method changes the original array and slice() method doesn’t change the original array.
+ 3) The splice() method can take n number of arguments and slice() method takes 2 arguments
+*/
+
+
+// DEEP COPY VS SHALLOW COPY--------------------------------------
+
+/*
+Deep copy and shallow copy are two ways of copying objects in JavaScript. 
+The main difference is that a deep copy creates a new object with new memory locations 
+for all of its properties and nested objects or arrays, 
+while a shallow copy creates a new object with references to the same memory locations as the original object.
+
+This means that a deep copy is independent of the original object, 
+and any changes made to either one will not affect the other. 
+A shallow copy, on the other hand, is dependent on the original object, 
+and any changes made to either one will be reflected in the other.
+*/
