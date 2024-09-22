@@ -12,8 +12,10 @@ console.log("charCodeAt-->",Name.charCodeAt(3)) //returns ascii value
 
 // check element is present in string
 console.log('checkelement Exist--<>',Name.includes('i'))
+
 // return the index of element in string
 console.log('index of element--<>',Name.indexOf('i'))
+
 // alternate method for finding index
 function findIndex(str, element) {
     for (var i = 0; i < str.length; i++) {
