@@ -5,7 +5,6 @@ let arr2 = new Array()
 console.log(arr, arr2)
 
 // how to access first and last element in array
-
 let array = [12, 4, 8, 99, 100, 75]
 let firstelement = array[0]
 let lastelement = array[array.length - 1]
@@ -29,7 +28,6 @@ array.shift()
 console.log("1st ele removed", array)
 
 // looping through an element in an array
-
 for (var i = 0; i < array.length; i++) {
     console.log("looping array", array[i])
 }
@@ -44,7 +42,6 @@ for (var i = 0; i < array.length; i++) {
 
 
 // Question -1 : Check the elemet is present in array or not
-
 function checkIsElementIsPresent(arr, ele) {
 
     // return arr.includes(ele)
