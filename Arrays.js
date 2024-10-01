@@ -325,13 +325,22 @@ console.log("remove duplicates in Array 2-->", uniqAr)
 
 // method -3 ---> using reduce method
 
-const uniqeAr = ar.reduce((acc,curval)=>{
-    if(!acc.includes(curval)){
+const uniqeAr = ar.reduce((acc, curval) => {
+    if (!acc.includes(curval)) {
         acc.push(curval)
     }
     return acc;
-},[])
+}, [])
 console.log("remove duplicates in Array 3-->", uniqeAr)
+
+// count duplicates in a array
+
+const dupeArr = ['one', 'two', 'three', 'one', 'five', 'two', 'one', 'one']
+let cnt = {}
+dupeArr.forEach((ele) => {
+    cnt[ele] = (cnt[ele] || 0) + 1
+})
+console.log("duplicate count in array", cnt)
 
 
 
