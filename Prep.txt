@@ -1,16 +1,26 @@
 1) What is Node Js?
-	Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. It is built on Chrome's V8 JavaScript engine, which makes it fast and efficient. 
-Key Features of Node.js:
-Event-driven, non-blocking I/O model:
-Node.js uses an event-driven architecture, which means that it can handle multiple requests concurrently without blocking the execution of other code. This makes it ideal for building high-performance, scalable applications.
+	Node.js is an open-source, cross-platform JavaScript runtime environment that allows
+	developers to run JavaScript code outside of a web browser. It is built on Chrome's V8
+	JavaScript engine, which makes it fast and efficient. 
+	Key Features of Node.js:
+	Event-driven, non-blocking I/O model:
+	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
+	concurrently without blocking the execution of other code. This makes it ideal for building high-performance, scalable applications.
 
 
-2)Difference between Node.js and JavaScript?
-JavaScript and Node.js are both crucial in modern web development, but they serve different purposes and are used in different environments. 
-JavaScript is a programming language primarily used for client-side web development, while Node is a runtime environment that allows JavaScript to be executed on the server side.
+2) Difference between Node.js and JavaScript?
+	JavaScript and Node.js are both crucial in modern web development, but they serve different purposes 
+	and are used in different environments. 
+	JavaScript is a programming language primarily used for client-side web development, 
+	while Node is a runtime environment that allows JavaScript to be executed on the server side.
 
 3) Is JavaScript is single threaded or multithreaded Why?
-	JavaScript is a single threaded non-blocking asynchronous programming language. Javascript itself is a single threaded language, Javascript engines such as the V8 engine provides components such as the call stack, callback queue, event loop and makes use of the web APIs provided by the web browser and augments Javascript to create its multithreading illusion.
+	JavaScript is a single threaded non-blocking asynchronous programming language. 
+	Javascript itself is a single threaded language, Javascript engines such as the V8 engine 
+	provides components such as the call stack, callback queue, event loop and makes use of the web APIs 
+	provided by the web browser and augments Javascript to create its multithreading illusion.
 
 4) What is Callback Hell?
-	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested callbacks make the code more difficult to read and understand. This often occurs when dealing with asynchronous operations, such as handling events, making HTTP requests, or reading files.
+	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested 
+	callbacks make the code more difficult to read and understand. This often occurs when dealing with 
+	asynchronous operations, such as handling events, making HTTP requests, or reading files.
