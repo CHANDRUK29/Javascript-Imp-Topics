@@ -14,13 +14,68 @@
 	JavaScript is a programming language primarily used for client-side web development, 
 	while Node is a runtime environment that allows JavaScript to be executed on the server side.
 
+
 3) Is JavaScript is single threaded or multithreaded Why?
 	JavaScript is a single threaded non-blocking asynchronous programming language. 
 	Javascript itself is a single threaded language, Javascript engines such as the V8 engine 
 	provides components such as the call stack, callback queue, event loop and makes use of the web APIs 
 	provided by the web browser and augments Javascript to create its multithreading illusion.
 
+
 4) What is Callback Hell?
 	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested 
 	callbacks make the code more difficult to read and understand. This often occurs when dealing with 
 	asynchronous operations, such as handling events, making HTTP requests, or reading files.
+
+
+5) What is a first class function ?
+	First-class functions means when functions in that language are treated like any other variable.
+	Function can be passed as an argument to other functions, can be returned by another function 
+	and can be assigned as a value to a variable.
+	
+
+6) What is a higher order function ?
+	A higher-order function is a function that accepts another function as an argument or 
+	returns a function as a return value or both. 
+
+
+7) What is the currying function?
+	Currying is the process of taking a function with multiple arguments and 
+	turning it into a sequence of functions each with only a single argument. 
+
+	eg: const curryUnaryFunction = (a) => (b) => (c) => a + b + c;
+	curryUnaryFunction(1); // returns a function: b => c =>  1 + b + c
+	curryUnaryFunction(1)(2); // returns a function: c => 3 + c
+	curryUnaryFunction(1)(2)(3); // returns the number 6
+
+
+8) What is the Temporal Dead Zone ?
+	The area of block where a variable is in accessible until the moment the computer completely 
+	initializes it with a value.
+	whenever you try to access a variable inside a temporal dead zone it gives you reference error.
+
+
+9) What is an IIFE (Immediately Invoked Function Expression)
+	IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+
+10) What is memoization
+	Memoization is a functional programming technique which attempts to increase a function’s performance by 
+	caching its previously computed results.
+	
+
+11) What is Hoisting ?
+	Hoisting is a phenomena in JavaScript by which you can access the variables 
+	and functions even before you have initalized it.
+
+	Hoisting is a JavaScript mechanism where variables, function declarations and 
+	classes are moved to the top of their scope before code execution.
+
+
+12) what is Closures?
+	A closure is the combination of a function bundled(enclosed) together with its 
+	lexical environment within which that function was declared.
+
+	Ability Of a function to remember the variables and functions that are declared in its outer scope.
+
+
