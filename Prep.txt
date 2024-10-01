@@ -79,3 +79,24 @@
 	Ability Of a function to remember the variables and functions that are declared in its outer scope.
 
 
+13) What are classes in ES6 ?
+	Classes are nothing but syntatic sugar for constructor functions.
+
+14) what is constructor?
+	It is a special function that creates and initializes an object instance of class. constructor gets
+	called when yo declare an object using "new" keyword.
+
+15) What are modules?
+	Modules refer to small units of independent, reusable code and also act as the
+	foundation of many JavaScript design patterns. Most of the JavaScript modules 
+	export an object literal, a function, or a constructor.
+
+16) What is a service worker?
+	A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page 
+	and provides features that don't need a web page or user interaction. 
+
+
+
+
+
+
