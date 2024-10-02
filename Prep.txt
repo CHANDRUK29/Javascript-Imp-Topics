@@ -132,6 +132,7 @@
 	Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved 
 	when all the promises get resolved or any one of them gets rejected.
 
+
 24) What is a strict mode in javascript?
 	In EcmaScript 5 a new feature called javascript strict mode allows you to write code or function
 	in "strict" operational environment. In the strict mode all forms of error including silent errors will be thrown,
@@ -152,6 +153,21 @@
 	You need to load a polyfill if ES6 is not supported
 
 
+26) What is a polyfill
+	A polyfill is a piece of JS code used to provide modern functionality 
+	on older browsers that do not natively support it. 
+	For example, Silverlight plugin polyfill can be used to mimic the functionality 
+	of an HTML Canvas element on Microsoft Internet Explorer 7.
+
+	There are two main polyfill libraries available,
+	Core.js: It is a modular javascript library used for cutting-edge ECMAScript features.
+	Polyfill.io: It provides polyfills that are required for browser needs.
+
+
+27) What is tree shaking
+	Tree shaking is a form of dead code elimination. It means that unused modules will not be included
+ 	in the bundle during the build process and for that it relies on the static structure of ES2015 module 
+ 	syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler rollup.
 
 
 
