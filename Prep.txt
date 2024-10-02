@@ -96,6 +96,61 @@
 	and provides features that don't need a web page or user interaction. 
 
 
+17) what is promise?
+	A promise is an object that represents the eventual completion or failure of an asynchronous
+	operation and resulting its value.
+
+
+18) Why do you need a promise?
+	Promises are used to handle asynchronous operations. They provide an alternative approach for 
+	callbacks by reducing the callback hell and writing the cleaner code.
+
+
+19) What are the three states of promise?
+	Promises have three states:
+
+	   a)Pending: This is an initial state of the Promise before an operation begins
+	   b)Fulfilled: This state indicates that the specified operation was completed.
+	   c)Rejected: This state indicates that the operation did not complete. 
+	   In this case an error value will be thrown.
+
+
+20) What is a callback function ?
+	A callback function is a function passed into another function as an argument.
+
+
+21) What is a callback hell ?
+	Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard 
+	to read and debug when dealing with asynchronous logic.
+
+
+22) What is promise chaining?
+	The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining.
+
+
+23) What is promise.all?
+	Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved 
+	when all the promises get resolved or any one of them gets rejected.
+
+24) What is a strict mode in javascript?
+	In EcmaScript 5 a new feature called javascript strict mode allows you to write code or function
+	in "strict" operational environment. In the strict mode all forms of error including silent errors will be thrown,
+	as a result debugging becomes a lot simpler. thus programmers chances of making an error are lowered.
+
+
+25) What are the pros and cons of promises over callbacks?
+
+	Below are the list of pros and cons of promises over callbacks:
+	Pros:
+	It avoids callback hell which is unreadable
+	Easy to write sequential asynchronous code with .then()
+	Easy to write parallel asynchronous code with Promise.all()
+	Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+
+	Cons:
+	It makes little complex code
+	You need to load a polyfill if ES6 is not supported
+
 
 
 
