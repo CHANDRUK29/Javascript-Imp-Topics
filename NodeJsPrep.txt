@@ -1,0 +1,8 @@
+1) What is Node Js?
+	Node.js is an open-source, cross-platform JavaScript runtime environment that allows
+	developers to run JavaScript code outside of a web browser. It is built on Chrome's V8
+	JavaScript engine, which makes it fast and efficient. 
+	Key Features of Node.js:
+	Event-driven, non-blocking I/O model:
+	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
+	concurrently without blocking the execution of other code. This makes it ideal for building high-performance, scalable applications.
