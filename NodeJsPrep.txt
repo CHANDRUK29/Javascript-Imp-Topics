@@ -117,6 +117,88 @@
 	*)Call the next step in program.
 
 
+18) What is the difference between fork() and spawn() methods in Node.js?
+	The fork() method is a specialized version of spawn() that is specifically designed for
+	spawning new Node.js processes. It creates a new instance of the V8 engine to run a separate Node.js script.
+
+	The spawn() method is used to launch a new process with a given command. It allows you to execute external 
+	commands and interact with the child process’s input and output streams in real time.
+
+19) What is piping in Node.js?
+	Piping is a mechanism used to connect the output of one stream to another stream. 
+	It is normally used to retrieve data from one stream and pass output to another stream.
+
+
+20) What is a reactor pattern in Node.js?
+	It is basically a concept of non-blocking I/o Operations. This pattern provides a handler that is associated 
+	with each I/O Operation. As soon as an I/O request it is then submitted to a demultiplexer. This demultiplexer
+	is a notification interface which is capable of handling concurrency in non-blocking I/O mode.
+
+
+21) What is a test pyramid in Node.js?
+	A Test Pyramid is a figure which explains the propotion of unit tests, integration tests and end to end tests
+	that are required for proper development of project.
+
+
+22) For Node.js, why does Google use the V8 engine?
+	The V8 engine, developed by Google, is open-source and written in C++. Google Chrome makes use of this engine.
+	V8,unlike the other engines, is also utilized for the popular Node.js runtime. V8 was initially intended to improve 
+	the speed of JavaScript execution within web browsers. Instead of employing an interpreter, V8 converts JavaScript 
+	code into more efficient machine code to increase performance. It turns JavaScript code into machine code during
+	execution by utilizing a JIT (Just-In-Time) compiler, as do many current JavaScript engines such as 
+	SpiderMonkey or Rhino (Mozilla).
+
+
+23) What is Middleware In Node Js?
+	Middleware is a function that provides a way to process the request and response between the client and the server.
+	The purpose of middleware is to perform action such as authentication, validation, data parsing and error handling
+	that are required for each request and response in the application.
+
+
+24) What is the purpose of NODE_ENV?
+	NODE_ENV is an environment variable that stands for node environment in express server.
+
+
+25) List the various Node.js timing features.
+	SET TIMEOUT/CLEAR TIMEOUT : used to schedule code execution after a designated amount of milliseconds.
+	SET INTERVAL/ CLEAR INTERVAL : used to execute block of codes multiple times.
+	SET IMMEDIATE/ CLEAR IMMEDIATE : used to execute code at the end of current event loop cycle.
+
+26) What is WASI, and why is it being introduced?
+	WASI, which stands for WebAssembly System Interface, is a specification that enables WebAssembly modules to 
+	interact with the underlying operating system in a standardized way. This allows WebAssembly code to perform 
+	tasks like file system access, network communication, and environment variable manipulation, even outside of 
+	the browser environment.
+
+
+27) What is a fork in node JS?
+	The Fork method in Node.js creates a new child process that runs a separate Node.js instance and can be useful 
+	for running CPU-intensive tasks or creating a cluster of Node.js servers.
+
+
+28) Are there any disadvantages to using Node.js?
+	Node.Js is not suitable for CPU-intensive tasks. This is because Node.js is single-threaded, meaning it can only 
+	execute one task at a time. Node.js is not suitable for applications that require a lot of memory. 
+	This is because Node.js uses a lot of memory for each connection. If you have a large number of connections, 
+	it can quickly consume a lot of memory.
+
+
+29) What is the advantage of using Node.js?
+	Node.js is fast and scalable. Node.js is easy to learn and use. Node.js is well-suited for real-time applications, 
+	such as chat applications, online games, and streaming services. This is because Node.js can handle a large number 
+	of connections and can perform non-blocking I/O operations, which makes it ideal for real-time communication.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
