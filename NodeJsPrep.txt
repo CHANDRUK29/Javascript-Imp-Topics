@@ -77,4 +77,27 @@
 		*)Since Node.js is single-threaded, CPU intensive tasks are not its strong suit.
 
 
+11) Differentiate between process.nextTick() and setImmediate()?
+	process.nextTick() runs code immediately after the current operation, before I/O tasks. 
+	setImmediate() schedules code to run after the current event loop phase, following I/O tasks, impacting
+	execution timing.
+
+
+12) What is an EventEmitter in Node.js?
+	EventEmitter is a class that holds all the objects that can emit events
+	Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously.
+
+
+13) What are the two types of API functions in Node.js?
+	The two types of API functions in Node.js are:
+		*)Asynchronous, non-blocking functions
+		*)Synchronous, blocking functions
+
+
+14) What is the package.json file?
+	The package.json file is the heart of a Node.js system. 
+	This file holds the metadata for a particular project. 
+	The package.json file is found in the root directory of any Node application or module.
+
+
 
