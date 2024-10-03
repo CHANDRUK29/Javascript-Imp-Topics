@@ -198,6 +198,20 @@
 	server-side applications. It is typically used for real-time applications, such as chat applications, online games,
 	and streaming services.
 
+31) What is "non-blocking" in node.js?
+	In Node.js, non-blocking refers to the ability of the runtime environment to execute multiple tasks simultaneously 
+	without waiting for the completion of one task before starting the next. This is achieved through the use of 
+	asynchronous I/O operations, which allow Node.js to handle multiple requests concurrently. 
+
+
+32) Explain the concept of stub in Node.js?
+	Stubs are simply functions that are used to write test cases to verify the working piece of code.
+
+
+33) What is Libuv?
+	Libuv is a widely used library used in node js. It is used to complement the asynchronous I/O functionality of node js.
+	It supports very good file system movement handling methodologies.
+
 
 
 
