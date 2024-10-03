@@ -6,3 +6,75 @@
 	Event-driven, non-blocking I/O model:
 	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
 	concurrently without blocking the execution of other code. This makes it ideal for building high-performance, scalable applications.
+
+
+2) Why use Node.js?
+	Node.js makes building scalable network programs easy. Some of its advantages include:
+
+	*)It is generally fast
+	*)It rarely blocks
+	*)It offers a unified programming language and data type
+	*)Everything is asynchronous 
+	*)It yields great concurrency
+
+
+3) Why is Node.js Single-threaded?
+	Node.js is single-threaded for async processing. By doing async processing on a single-thread under
+	typical web loads, more performance and scalability can be achieved instead of the typical 
+	thread-based implementation.
+
+
+4)  If Node.js is single-threaded, then how does it handle concurrency?
+	The Node JS Processing paradigm is heavily influenced by the JavaScript Event-based model and the 
+	JavaScript callback system. As a result, Node.js can easily manage more concurrent client requests. 
+	The event loop is the processing model's beating heart in Node.js.
+
+
+5) What does concurrency mean in node JS?
+	Concurrency is an essential feature of Node. js that enables it to handle large numbers of I/O operations
+	simultaneously, without blocking the execution thread.
+
+
+6) How would you define the term I/O in Nodejs? 
+	The I/O (Input/Output) model refers not just to the input/output operations but also to anything 
+	ranging from writing/reading files on your local system to making an API request to read/write 
+	data to a remote system to routing the requests.
+
+
+7) What is NPM?
+	NPM stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.
+
+	Node Package Manager provides two main functionalities:
+
+	*)Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org
+	*)Provides command-line utility to install Node.js packages and also manages Node.js versions and dependencies  
+
+
+8) What are modules?
+	modules are encapsulated units of code that can be reused across different parts of an 
+	application. Modules help organize code into smaller, manageable pieces, promote code 
+	reusability, and facilitate better maintainability and scalability of NodeJS applications.
+
+
+9) what is Express JS ?
+	Express is a most popular Javascript framework that provides a wide set of features to develop 
+	web and mobile applications. Express Js Helps with the management of HTTP Requests and Responses,
+	routing and Handling of Middlewares.
+
+
+10) What are the pros and cons of Node.js?
+
+	PROS:
+		*)Fast processing and an event-based model.
+		*)Uses JavaScript, which is well-known amongst developers.
+		*)Node Package Manager has over 50,000 packages that provide the functionality to an application.
+		*)Best suited for streaming huge amounts of data and I/O intensive operations.
+	
+	CONS:
+		*)Not suitable for heavy computational tasks.
+		*)Using callback is complex since you end up with several nested callbacks.
+		*)Dealing with relational databases is not a good option for Node.js.
+		*)Since Node.js is single-threaded, CPU intensive tasks are not its strong suit.
+
+
+
