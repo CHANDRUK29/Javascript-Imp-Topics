@@ -189,6 +189,14 @@
 	of connections and can perform non-blocking I/O operations, which makes it ideal for real-time communication.
 
 
+30) What is the difference between Node.js and Ajax?
+	Ajax and Node.js are two different technologies that are used for different purposes. Ajax is a client-side technology 
+	that allows for asynchronous communication between the client and the server. It is typically used to update parts of a
+	web page without requiring a full page reload. 
+
+	Node.js, on the other hand, is a server-side technology that is used for building fast, scalable, and efficient 
+	server-side applications. It is typically used for real-time applications, such as chat applications, online games,
+	and streaming services.
 
 
 
