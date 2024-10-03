@@ -100,4 +100,39 @@
 	The package.json file is found in the root directory of any Node application or module.
 
 
+15) What is REPL in Node.js?
+	REPL stands for Read Eval Print Loop, and it represents a computer environment.
+	It’s similar to a Windows console or Unix/Linux shell in which a command is entered. 
+	Then, the system responds with an output.
+
+
+16) What is the control flow function?
+	The control flow function is a piece of code that runs in between several asynchronous function calls.
+
+
+17) How does control flow manage the function calls?
+	*)Control the order of execution
+	*)collect Data
+	*)Limit Concurrency
+	*)Call the next step in program.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
