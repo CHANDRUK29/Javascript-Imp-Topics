@@ -81,10 +81,13 @@
     different operation on its inputs. Each stage takes input from the previous stage output.
 
 
-14) What are the main features of MongoDB?
-    Some prominent features of MongoDB include flexibility in data modeling, horizontal scalability, support 
-    for unstructured data, powerful query language, automatic sharding, high availability with replica sets, 
-    and geospatial capabilities.
+14) What are the main features of MongoDB? 
+    *) flexibility in data modeling, 
+    *) horizontal scalability, 
+    *) support for unstructured data, 
+    *) powerful query language, 
+    *) automatic sharding, 
+    *) high availability with replica sets.
 
 
 15)  What is the purpose of using MongoDB over other databases?
