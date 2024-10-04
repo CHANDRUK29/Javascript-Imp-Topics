@@ -16,10 +16,180 @@
 
 
 3) What are some features of MongoDB?
-    *)Indexing: It supports generic secondary indexes and provides unique, compound, 
-    geospatial, and full-text indexing capabilities as well.
-    *)Aggregation: It provides an aggregation framework based on the concept of data processing pipelines.
-    *)Special collection and index types: It supports time-to-live (TTL) collections for data 
-    that should expire at a certain time
-    *)File storage: It supports an easy-to-use protocol for storing large files and file metadata.
-    *)Sharding: Sharding is the process of splitting data up across machines.
+    *) Indexing: It supports generic secondary indexes and provides unique, compound, 
+        geospatial, and full-text indexing capabilities as well.
+    *) Aggregation: It provides an aggregation framework based on the concept of data processing pipelines.
+    *) Special collection and index types: It supports time-to-live (TTL) collections for data 
+        that should expire at a certain time
+    *) File storage: It supports an easy-to-use protocol for storing large files and file metadata.
+    *) Sharding: Sharding is the process of splitting data up across machines.
+
+
+4) What is MongoShell?
+    It is  Javascript shell that allows interaction with mongoDb instance from command line.
+
+
+5) What is Indexing ?
+    Indexing is basically a technique that helps in reducing the search time of database query or it helps in faster
+    accessing the database.
+    It supports efficient execution of queries in mongodb.
+
+6) Explain Sharding ?
+    Sharding is a type of database partioning in which large database is divided or partitioned into 
+    smaller data and different nodes. These shards are not only smaller but also faster.
+
+    Sharding is the process of splitting data up across machines. We also use the term "partioning".
+    we can store more data and handle more load without requiring large or more powerful machines.
+
+
+7) How does MongoDB store data?
+    MongoDB stores data in BSON (Binary JSON) format, a binary-encoded serialization of JSON-like documents.
+    These documents are stored in collections within databases.
+
+
+8) What is a primary key in MongoDB?
+    In MongoDB, the `_id` field serves as the primary key for a document. 
+    It must be unique within a collection and is automatically generated if not provided during document insertion.
+
+
+9) What is a replica set in MongoDB?
+    It is a group of servers that maintain the same data. To keep identical copies of your data on multiple servers.
+    It provides data redundancy and high availability. One server acts as the primary, 
+    while others are secondary servers that replicate data from the primary.
+
+
+10) What are the data types supported by MongoDB?
+    MongoDB supports various data types, including string, number, boolean, date, array, object, null, 
+    regex, and more. It also helps geospatial and binary data types.
+
+
+11) What is a cursor in MongoDB, and when is it used?
+    A cursor in MongoDB is an iterator to retrieve and process documents from query results. 
+    Cursors are used when fetching large result sets, allowing you to retrieve documents in batches.
+
+
+12) Can you explain the concept of data modeling in MongoDB?
+    Data modeling in MongoDB involves designing the structure of your documents and collections 
+    to represent your data best and meet your application's requirements. It includes defining document 
+    schemas, relationships, and indexing strategies.
+
+
+13) Aggregation in MongoDb?
+    MongoDB's aggregation framework is a powerful tool designed for processing and transforming 
+    documents within a collection. It is based on concept of a pipeline.
+    We pass the documents from that collection through one or more stages each of which performs
+    different operation on its inputs. Each stage takes input from the previous stage output.
+
+
+14) What are the main features of MongoDB?
+    Some prominent features of MongoDB include flexibility in data modeling, horizontal scalability, support 
+    for unstructured data, powerful query language, automatic sharding, high availability with replica sets, 
+    and geospatial capabilities.
+
+
+15)  What is the purpose of using MongoDB over other databases?
+    MongoDB is chosen over other databases for its ability to handle flexible, unstructured, and rapidly changing data. 
+    It excels in scenarios where scalability, speed, and agility are essential, such as web and mobile applications, 
+    real-time analytics, and content management systems. Its horizontal scaling capabilities also make it suitable 
+    for large-scale data storage and processing.
+
+
+16) What are the different types of indexes in MongoDB?
+    MongoDB supports various indexes, including single-field indexes, compound indexes, geospatial indexes, 
+    text indexes, hashed indexes, and wildcard indexes.
+
+
+17) How do you scale a MongoDB database?
+    You can scale MongoDB horizontally by adding more servers to a cluster, vertically by upgrading server hardware,
+    or by using sharding to distribute data across multiple servers in a sharded cluster.
+
+
+18) How do you implement security in MongoDB?
+    MongoDB provides a range of security capabilities, including authentication, role-based access control (RBAC), 
+    SSL/TLS encryption, auditing, and network security, ensuring data safeguarding and preventing unauthorized access.
+
+
+
+19) How do you optimize query performance in MongoDB?
+    You can optimize query performance by creating appropriate indexes, using the Aggregation Pipeline, 
+    minimizing the number of queries, and optimizing query patterns to leverage the query planner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
