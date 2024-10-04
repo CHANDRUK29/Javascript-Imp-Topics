@@ -1,0 +1,25 @@
+1) what is MongoDb?
+    MongoDb is a open source document oriented NOSQL databases used for high 
+    volume data storage. Instead of using tables and rows as in traditional relational
+    databases mongodb uses collections and documents. 
+
+    Collection - A group of mongodb documents.
+    document - A way to organize and store data as a set of field-value pairs.
+
+
+2) What are the advantages of mongodb?
+    *)MongoDB supports field, range-based, string pattern matching type queries
+    for searching the data in the database 
+    *)MongoDB support primary and secondary index on any fields.
+    *)MongoDB has inbuilt support for data partitioning (Sharding).
+    *)MongoDB uses a dynamic database schema.
+
+
+3) What are some features of MongoDB?
+    *)Indexing: It supports generic secondary indexes and provides unique, compound, 
+    geospatial, and full-text indexing capabilities as well.
+    *)Aggregation: It provides an aggregation framework based on the concept of data processing pipelines.
+    *)Special collection and index types: It supports time-to-live (TTL) collections for data 
+    that should expire at a certain time
+    *)File storage: It supports an easy-to-use protocol for storing large files and file metadata.
+    *)Sharding: Sharding is the process of splitting data up across machines.
