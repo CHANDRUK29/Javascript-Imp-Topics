@@ -98,8 +98,13 @@
 
 
 16) What are the different types of indexes in MongoDB?
-    MongoDB supports various indexes, including single-field indexes, compound indexes, geospatial indexes, 
-    text indexes, hashed indexes, and wildcard indexes.
+    MongoDB supports various indexes, including 
+        *) single-field indexes, 
+        *) compound indexes, 
+        *) geospatial indexes, 
+        *) text indexes, 
+        *) hashed indexes, and 
+        *) wildcard indexes.
 
 
 17) How do you scale a MongoDB database?
