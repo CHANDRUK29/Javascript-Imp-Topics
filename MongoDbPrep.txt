@@ -150,7 +150,46 @@
     Secondary nodes are known as slave nodes. These are read only nodes that replicate from the primary.
 
 
-24) 
+24) MongoDb Query Operators?
+    There are many query operators that can be used to compare and reference document fields.
+        Comparison :
+            *) $eq: Values are equal
+            *) $ne: Values are not equal
+            *) $gt: Value is greater than another value
+            *) $gte: Value is greater than or equal to another value
+            *) $lt: Value is less than another value
+            *) $lte: Value is less than or equal to another value
+            *) $in: Value is matched within an array
+        
+        Logical :
+            *) $and: Returns documents where both queries match
+            *) $or: Returns documents where either query matches
+            *) $nor: Returns documents where both queries fail to match
+            *) $not: Returns documents where the query does not match
+
+        Evaluation :
+            *) $regex: Allows the use of regular expressions when evaluating field values
+            *) $text: Performs a text search
+            *) $where: Uses a JavaScript expression to match documents
+
+
+25) MongoDB Update Operators ?
+        There are many update operators that can be used during document updates.
+            Fields:
+                *) $currentDate: Sets the field value to the current date
+                *) $inc: Increments the field value
+                *) $rename: Renames the field
+                *) $set: Sets the value of a field
+                *) $unset: Removes the field from the document
+
+            Array:
+                *) $addToSet: Adds distinct elements to an array
+                *) $pop: Removes the first or last element of an array
+                *) $pull: Removes all elements from an array that match the query
+                *) $push: Adds an element to an array
+
+            
+
 
 
 
