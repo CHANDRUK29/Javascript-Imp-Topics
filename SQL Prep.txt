@@ -130,7 +130,93 @@
                     It always retrieves unique records and arranges them in ascending order by default.
         D. MINUS: This operator returns the records from the first query, which is not found in the second query.
                     It does not return duplicate values. 
-        
+
+
+18) Difference between In and Between Operator in sql?
+    The BETWEEN operator is used to filter results that fall within a specified range of values such as
+    numbers, dates or text while the IN operator is used to filter results based on a list of specific values.
+
+
+19) What are functions and their usage in SQL?
+    SQL functions are simple code snippets that are frequently used and re-used in database systems 
+    for data processing and manipulation.
+
+
+20) What is meant by case manipulation functions? Explains its different types in SQL.
+     Case manipulation functions are part of the character functions.
+        LOWER: This function is used to converts a given character into lowercase. 
+        UPPER: This function is used to converts a given character into uppercase.
+        iNITCAP: This function is used to converts given character values to uppercase for the initials of each word.
+
+21) Explain character-manipulation functions? Explains its different types in SQL.
+        Character-manipulation functions are used to change, extract, and alter the character string.
+            A) CONCAT: This function is used to join two or more values together. It always appends the 
+                        second string into the end of the first string. 
+            B) SUBSTR: It is used to return the portion of the string from a specified start point to an endpoint.
+            C) LENGTH: This function returns the string's length in numerical value, including the blank spaces.
+            D) INSTR: This function finds the exact numeric position of a specified character or word in a given string.
+            E) LPAD: It returns the padding of the left-side character value for right-justified value.
+            F) RPAD: It returns the padding of the right-side character value for left-justified value.
+            G) TRIM: This function is used to remove all the defined characters from the beginning, end, or both.
+            H) REPLACE: This function is used to replace all occurrences of a word or portion of the string (substring)
+                        with the other specified string value.
+
+
+22) what is COALESCE?
+        The COALESCE() function returns the first non-null value in a list.
+
+
+23) What is Aggregate functions in SQL?
+        The aggregate function is used to determine and calculate several values in a table and 
+        return the result as a single number.
+
+        SQL provides seven (7) aggregate functions, which are given below:
+            AVG(): This function is used to returns the average value from specified columns.
+            COUNT(): This function is used to returns the number of table rows, including rows with null values.
+            MAX(): This function is used to returns the largest value among the group.
+            MIN(): This function is used to returns the smallest value among the group.
+            SUM(): This function is used to returns the total summed values(non-null) of the specified column.
+            FIRST(): This function is used to returns the first value of an expression.
+            LAST(): This function is used to returns the last value of an expression.
+
+
+24) What is SQL Injection?
+        SQL injection is a code injection technique that might destroy your database.
+        SQL injection is one of the most common web hacking techniques.
+        SQL injection is the placement of malicious code in SQL statements, via web page input.
+
+
+
+25) What is a Stored Procedure?
+        A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
