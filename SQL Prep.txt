@@ -1,3 +1,176 @@
 1) What is SQL?
     SQL stands for Structured Query Language. 
     SQL is a standard language for storing, manipulating and retrieving data in relational databases.
+
+
+2) What are the usages of SQL?
+    SQL is responsible for maintaining the relational data and the data structures present in the database. 
+    Some of the common usages are given below:
+        To execute queries against a database
+        To retrieve data from a database
+        To inserts records in a database
+        To updates records in a database
+        To delete records from a database
+        To create new databases
+        To create new tables in a database
+        To create views in a database
+        To perform complex operations on the database.
+
+3) What is the purpose of DDL Language?
+    DDL stands for Data definition language. It is the subset of a database that defines the 
+    data structure of the database when the database is created. 
+
+
+4) What is the purpose of DDL Language?
+    DDL stands for Data definition language. It is the subset of a database that defines the 
+    data structure of the database when the database is created. 
+
+
+5) What is the purpose of DCL Language?
+    Data control language allows users to control access and permission management to the database.
+    (E.G) grant and revoke acess.
+
+
+6) What are tables and fields in the database?
+    A table is a set of organized data in the form of rows and columns. 
+    It enables users to store and display records in the structure format. 
+
+
+7) What is Primary Key?
+    The PRIMARY KEY constraint uniquely identifies each record in a table. 
+    Primary keys must contain UNIQUE values, and cannot contain NULL values. 
+    A table can have only ONE primary key.
+
+
+8) What is Foriegn Key?
+    A FOREIGN KEY is a field (or collection of fields) in one table, that refers
+    to the PRIMARY KEY in another table. The table with the foreign key is called
+    the child table, and the table with the primary key is called the referenced 
+    or parent table.
+
+
+9)  What is a unique key?
+    A unique key is a single or combination of fields that ensure all values 
+    stores in the column will be unique. It means a column cannot stores duplicate values.
+
+
+10) What is the difference between a primary key and a unique key?
+    Primary Key:
+        The primary key act as a unique identifier for each record in the table.
+        We cannot store NULL values in the primary key column.
+        We cannot change or delete the primary key column values.
+
+    Unique Key:
+        The unique key is also a unique identifier for records when the primary key is not present in the table.
+        We can store NULL value in the unique key column, but only one NULL is allowed.
+        We can modify the unique key column values.
+
+
+11) What is a Database?
+    A database is an organized collection of data that is structured into tables, rows, columns, and indexes. 
+    It helps the user to find the relevant information frequently.
+
+
+12) What is DBMS?
+    DBMS stands for Database Management System. 
+    It is a software program that primarily functions as an interface between the database and the end-user.
+
+
+13) Normalization Vs Denormalization?
+    Normalization:
+        Divides data into smaller tables to reduce redundancy and ensure data integrity. 
+        This process involves transforming and scaling data to a common format and range.
+        Normalization is also known as data pre-processing. 
+
+    Denormalization:
+        Combines data from multiple tables into fewer, larger tables to improve data retrieval performance. 
+        This process involves breaking normalization rules and adding redundant data to a database. 
+
+
+14) what is Index in sql?
+    Indexes are a powerful tool used in the background of a database to speed up querying. 
+    Indexes power queries by providing a method to quickly lookup the requested data.
+
+
+15) What is Constraints in sql?
+    In a database table, we can add rules to a column known as constraints. 
+    These rules control the data that can be stored in a column.
+
+    The constraints used in SQL are:
+        *) NOT NULL : values cannot be null
+        *) UNIQUE : does not allows duplicate entry
+        *) PRIMARY KEY : USed as a unique iddentifier in table.
+        *) FORIEGN KEY : references a row in another table
+        *) CHECK : validates condition for new value
+        *) DEFAULT : set default value if not passed
+        *) CREATE INDEX	: used to speed up the read process.
+
+16) Which are joins in SQL? 
+    SQL joins are used to retrieve data from multiple tables into a meaningful result set.
+    Joins are used to merge two tables or retrieve data from tables. It depends on the relationship between tables.
+
+    Types:
+        *) Inner Join :  Returns records that have matching values in both tables
+        *) Left Join : Returns all records from the left table, and the matched records from the right table
+        *) Right Join : Returns all records from the right table, and the matched records from the left table
+        *) Full Join : Returns all records when there is a match in either left or right table.
+        *) Self Join : A self join is a regular join, but the table is joined with itself.
+        *) Cross Join : The CROSS JOIN keyword all matching records from both tables whether the other table matches or not.
+
+
+17) What are the set operators in SQL?
+    We use the set operators to merge data from one or more tables of the same kind.
+
+    The set operators in SQL are categories into four different types:
+        A. UNION: It combines two or more results from multiple SELECT queries into a single result set. 
+                    It has a default feature to remove the duplicate rows from the tables.
+        B. UNION ALL: This operator is similar to the Union operator, but it does not remove the duplicate
+                    rows from the output of the SELECT statements.
+        C. INTERSECT: This operator returns the common records from two or more SELECT statements. 
+                    It always retrieves unique records and arranges them in ascending order by default.
+        D. MINUS: This operator returns the records from the first query, which is not found in the second query.
+                    It does not return duplicate values. 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
