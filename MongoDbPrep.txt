@@ -123,12 +123,34 @@
     minimizing the number of queries, and optimizing query patterns to leverage the query planner.
 
 
+20) Why NoSQL is Used Over SQL ?
+    NoSQL is preferred over SQL in many cases because it offers more flexibility and scalability. 
+    The primary benefit of using a NoSQL system is that it provides developers with the ability to 
+    store and access data quickly and easily, without the overhead of a traditional relational database.
 
 
+21) Which is better SQL or NoSQL?
+    The decision of which type of database to use - SQL or NoSQL - will depend on the particular needs and 
+    requirements of the project. For example, if you need a fast, scalable, and reliable database for web 
+    applications then a NoSQL system may be preferable. On the other hand, if your application requires 
+    complex data queries and transactional support then an SQL system may be the better choice. 
 
 
+22) Explain the structure of ObjectID in MongoDB.
+        ObjectID is a 12-byte BSON type. These are:
+            *) 4 bytes value representing seconds
+            *) 3 byte machine identifier
+            *) 2 byte process id
+            *) 3 byte counter
 
 
+23)  What is primary and secondary replica set in MongoDB?
+    In MongoDB, primary nodes are the node that can accept write. These are also known as master nodes. 
+    The replication in MongoDB is single master so, only one node can accept write operations at a time.
+    Secondary nodes are known as slave nodes. These are read only nodes that replicate from the primary.
+
+
+24) 
 
 
 
