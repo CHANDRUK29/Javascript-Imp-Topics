@@ -1,11 +1,7 @@
-1) What is Node Js?
-	Node.js is an open-source, cross-platform JavaScript runtime environment that allows
-	developers to run JavaScript code outside of a web browser. It is built on Chrome's V8
-	JavaScript engine, which makes it fast and efficient. 
-	Key Features of Node.js:
-	Event-driven, non-blocking I/O model:
-	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
-	concurrently without blocking the execution of other code. This makes it ideal for building high-performance, scalable applications.
+1) What is JavaScript ?
+	JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. 
+	It is also known as the scripting language for webpages. It is well-known for the development of web pages, 
+	and many non-browser environments also use it.
 
 
 2) Difference between Node.js and JavaScript?
