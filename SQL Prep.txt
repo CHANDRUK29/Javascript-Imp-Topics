@@ -16,19 +16,31 @@
         To create views in a database
         To perform complex operations on the database.
 
+===> ORDER OF EXECUTION IN SQL?
+        FROM / JOIN --> WHERE --> GroupBy --> Having --> Select --> Distinct --> OrderBy --> Limit/Offset
+
+
 3) What is the purpose of DDL Language?
     DDL stands for Data Definition Language and refers to SQL commands used to create,alter, 
     modify, and delete database structures such as tables, indexes, and views.
+    EG - Create,Alter,Drop,Truncate.
 
 
-4) What is the purpose of DML Language?
+4) What is the purpose of DML and TCL Language?
     DML stands for Data Manipulation Language and refers to SQL commands used to insert, update, 
     and delete data within a database 
+    EG - Select, Insert,Update,Delete
+
+    TCL stands for Transactional Control Language , They ensure data integrity and manage changes made by DML commands
+    EG :
+        COMMIT: To save all changes made during the current transaction.
+        ROLLBACK: To undo changes made during the current transaction.
+        SAVEPOINT: To create a point in a transaction to which you can later roll back.
 
 
 5) What is the purpose of DCL Language?
     Data control language allows users to control access and permission management to the database.
-    (E.G) grant and revoke acess.
+    (E.G) grant and revoke.
 
 
 6) What are tables and fields in the database?
