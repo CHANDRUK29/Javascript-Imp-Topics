@@ -227,14 +227,40 @@
 
 
 30) What is recursive query in sql?
-    A recursive query in SQL is a query that calls itself repeatedly until it reaches a termination condition.
-    It is a query that continuously references a previous result until it returns an empty result.
+        A recursive query in SQL is a query that calls itself repeatedly until it reaches a termination condition.
+        It is a query that continuously references a previous result until it returns an empty result.
 
 
+31) what is window function in SQL?
+        Window functions in SQL are powerful tools that allow you to perform calculations across
+        a set of table rows that are related to the current row.
+        Unlike aggregate functions, which return a single value for a group of rows, window functions
+        return a value for each row within a specified window.
 
 
+32) How do you handle database deadlocks in SQL? What are strategies to avoid them?
+        Handling database deadlocks in SQL involves both detection and prevention strategies. 
+        A deadlock occurs when two or more transactions are waiting for each other to release locks.
+
+        Detecting Deadlocks:
+            Database Monitoring Tools,Error Handling
+
+        Avoiding Deadlocks
+            Consistent Locking Order,Reduce Lock Duration,Optimize Queries,Timeout Settings
 
 
+33) Impact on query Performance?
+        *) Speeding Up Data Retrieval
+        *) Reducing I/O Operations
+        *) Improving Sort Operations
+        *) Enhancing Join Performance
+
+
+34) What is the difference between clustered and non clustered index?
+        Clustered indexes can improve performance for queries that retrieve a large number of rows from
+        the table, because the database can use the index to avoid having to scan the entire table. 
+        A non-clustered index does not store the physical data of the table. Instead, it stores a 
+        pointer to the actual data.
 
 
 
