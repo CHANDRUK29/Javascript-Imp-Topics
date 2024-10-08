@@ -17,13 +17,13 @@
         To perform complex operations on the database.
 
 3) What is the purpose of DDL Language?
-    DDL stands for Data definition language. It is the subset of a database that defines the 
-    data structure of the database when the database is created. 
+    DDL stands for Data Definition Language and refers to SQL commands used to create,alter, 
+    modify, and delete database structures such as tables, indexes, and views.
 
 
-4) What is the purpose of DDL Language?
-    DDL stands for Data definition language. It is the subset of a database that defines the 
-    data structure of the database when the database is created. 
+4) What is the purpose of DML Language?
+    DML stands for Data Manipulation Language and refers to SQL commands used to insert, update, 
+    and delete data within a database 
 
 
 5) What is the purpose of DCL Language?
