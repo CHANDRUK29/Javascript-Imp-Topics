@@ -89,14 +89,8 @@
 
 
 13) Normalization Vs Denormalization?
-    Normalization:
-        Divides data into smaller tables to reduce redundancy and ensure data integrity. 
-        This process involves transforming and scaling data to a common format and range.
-        Normalization is also known as data pre-processing. 
-
-    Denormalization:
-        Combines data from multiple tables into fewer, larger tables to improve data retrieval performance. 
-        This process involves breaking normalization rules and adding redundant data to a database. 
+        Normalization is about reducing redundancy and improving data integrity but can lead to more complex queries.
+        Denormalization simplifies queries but at the cost of increased data redundancy and potential maintenance challenges. 
 
 
 14) what is Index in sql?
@@ -213,7 +207,28 @@
         Durability - ensures that changes to your data made by successfully executed transactions will be saved, even in the event of system failure.
 
 
+27) What is subquery?
+        A subquery is a query nested inside another SQL query. 
+        It is used to retrieve data that will be used in the main query (also known as the outer query).
 
+
+28) What is view in sql?
+        Views in SQL are virtual tables that are derived from one or more underlying tables. 
+        They do not store data themselves but provide a way to present data in a specific format or structure.
+
+
+29) VIEW VS CTE in sql?
+        A view is a virtual table and that is not part of the physical schema.
+        A view doesn’t store the output of a particular query — it stores the query itself.
+
+        CTEs or Common Table Expressions are a special type of subquery that is declared before the main query.
+        It also could be understood as a temporary table.
+
+
+
+30) What is recursive query in sql?
+    A recursive query in SQL is a query that calls itself repeatedly until it reaches a termination condition.
+    It is a query that continuously references a previous result until it returns an empty result.
 
 
 
