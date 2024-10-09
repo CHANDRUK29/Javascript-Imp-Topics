@@ -47,3 +47,41 @@ and any changes made to either one will not affect the other.
 A shallow copy, on the other hand, is dependent on the original object, 
 and any changes made to either one will be reflected in the other.
 */
+
+
+// Eager Loading VS LazyLoading
+
+"Eager loading" means loading all the data at once, like getting all the ingredients for a recipe as soon as you
+start cooking, while "lazy loading" means only loading what you need when you need it, like only getting out the 
+ingredients you need for the first step of the recipe as you go along; essentially, 
+eager loading is "get everything now" and lazy loading is "get it when you need it" to optimize performance and 
+save resources.
+
+
+
+// What is Sequelize?
+            Sequelize is a popular Object-Relational Mapping (ORM) library for Node. js,
+            which provides an abstraction layer over relational databases, making it easier to interact with databases
+            using JavaScript objects instead of raw SQL queries.
+            It helps users work with SQL databases, such as MySQL, PostgreSQL, SQLite, and more.
+            It's an open-source tool that can help reduce development time and prevent SQL injections
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
