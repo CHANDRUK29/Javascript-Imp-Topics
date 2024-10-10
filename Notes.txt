@@ -57,17 +57,129 @@ ingredients you need for the first step of the recipe as you go along; essential
 eager loading is "get everything now" and lazy loading is "get it when you need it" to optimize performance and 
 save resources.
 
+What is JavaScript ?
+	JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. 
+	It is also known as the scripting language for webpages. It is well-known for the development of web pages, 
+	and many non-browser environments also use it.
 
 
-// What is Sequelize?
-            Sequelize is a popular Object-Relational Mapping (ORM) library for Node. js,
-            which provides an abstraction layer over relational databases, making it easier to interact with databases
-            using JavaScript objects instead of raw SQL queries.
-            It helps users work with SQL databases, such as MySQL, PostgreSQL, SQLite, and more.
-            It's an open-source tool that can help reduce development time and prevent SQL injections
+What is Node Js?
+	Node.js is an open-source, cross-platform JavaScript runtime environment that allows
+	developers to run JavaScript code outside of a web browser. It is built on Chrome's V8
+	JavaScript engine, which makes it fast and efficient. 
+	Key Features of Node.js:
+	Event-driven, non-blocking I/O model:
+	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
+	concurrently without blocking the execution of other code. This makes it ideal for building 
+    high-performance, scalable applications.
+
+ what is Express JS ?
+	Express is a most popular Javascript framework that provides a wide set of features to develop 
+	web and mobile applications. Express Js Helps with the management of HTTP Requests and Responses,
+	routing and Handling of Middlewares.
+
+
+ What is SQL?
+    SQL stands for Structured Query Language. 
+    SQL is a standard language for storing, manipulating and retrieving data in relational databases.
+
+
+ what is MongoDb?
+    MongoDb is a open source document oriented NOSQL databases used for high 
+    volume data storage. Instead of using tables and rows as in traditional relational
+    databases mongodb uses collections and documents. 
+
+    Collection - A group of mongodb documents.
+    document - A way to organize and store data as a set of field-value pairs.
+
+
+What is Sequelize?
+        Sequelize is a popular Object-Relational Mapping (ORM) library for Node. js,
+        which provides an abstraction layer over relational databases, making it easier to interact with databases
+        using JavaScript objects instead of raw SQL queries.
+        It helps users work with SQL databases, such as MySQL, PostgreSQL, SQLite, and more.
+        It's an open-source tool that can help reduce development time and prevent SQL injections
 
 
 
+what is React Js?
+    React.js is a popular JavaScript library used for building user interfaces, particularly for 
+    single-page applications where a responsive, dynamic user experience is essential
+
+
+1. What is AWS?
+    AWS (Amazon Web Services) is a cloud computing platform that provides a variety of 
+    services including computing power, storage, and networking, allowing businesses to 
+    scale and grow without needing to invest heavily in physical infrastructure.
+
+
+2. Can you explain what EC2 is and its purpose?
+    EC2 (Elastic Compute Cloud) is a service that provides resizable compute capacity in the cloud. 
+    It allows users to launch and manage virtual servers (instances) that can be used to run applications,
+    such as Node.js applications. You can choose the type and size of instances based on your 
+    requirements and scale them as needed.
+
+
+3. What is S3, and how is it used in Node.js applications?
+    S3 (Simple Storage Service) is an object storage service that allows you to store and retrieve any 
+    amount of data. In Node.js applications, S3 is often used for storing files such as images, backups,
+    or logs. The AWS SDK for JavaScript can be used to interact with S3, allowing you to upload, 
+    download, and manage files.
+
+
+4. How do you deploy a Node.js application on AWS?
+    You can deploy a Node.js application on AWS using several services:
+
+    EC2: Launch an EC2 instance, install Node.js, and deploy your application.
+    Elastic Beanstalk: A platform as a service (PaaS) that automates the deployment and scaling of applications.
+    Lambda: For serverless applications, you can deploy Node.js functions that respond to events, 
+    such as HTTP requests via API Gateway.
+
+
+5. What is AWS Lambda, and when would you use it?
+    AWS Lambda is a serverless computing service that lets you run code without provisioning or managing servers.
+    You write your code in functions, and Lambda automatically scales based on the incoming requests. 
+    It’s ideal for event-driven architectures, APIs, and running backend processes without the overhead of 
+    server management.
+
+6. What is DynamoDB, and how does it differ from RDS?
+    DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with
+    seamless scalability. It’s suitable for applications requiring flexible schema design and high throughput.
+    RDS (Relational Database Service), on the other hand, is a managed relational database service that supports
+    SQL databases like MySQL and PostgreSQL. 
+    Use DynamoDB for unstructured data and RDS for structured data with complex relationships.
+
+
+7. How do you manage environment variables in AWS?
+    Environment variables can be managed in AWS using:
+
+    Elastic Beanstalk: You can set environment properties in the Elastic Beanstalk console.
+    Lambda: You can define environment variables directly in the Lambda function configuration.
+    Parameter Store or Secrets Manager: For sensitive information, AWS offers these services to 
+    securely manage environment variables.
+
+
+
+8. What is API Gateway, and how does it integrate with Node.js?
+    API Gateway is a fully managed service that allows you to create, publish, maintain, monitor, 
+    and secure APIs. It can integrate with AWS Lambda to trigger Node.js functions in response to HTTP 
+    requests. You can define routes, set up authentication, and manage rate limiting through API Gateway.
+
+
+9. What is IAM, and why is it important?
+    IAM (Identity and Access Management) allows you to manage access to AWS services and resources securely. 
+    It’s important because it helps define who can access what, ensuring that your AWS environment is secure 
+    by following the principle of least privilege, granting only the necessary permissions to users and services.
+
+
+
+10. How do you handle errors in your Node.js application deployed on AWS?
+    Error handling can be managed in several ways:
+
+    Use try-catch blocks to handle exceptions in your code.
+    Implement middleware in Express.js to catch errors globally.
+    Utilize AWS CloudWatch for logging errors and monitoring application health.
+    Set up alerts for critical failures using Amazon SNS or AWS Lambda to trigger recovery processes.
 
 
 
