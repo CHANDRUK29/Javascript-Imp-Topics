@@ -232,16 +232,35 @@ db.employees.insertMany([
 ]);
 
 
-Find all employees working in the "Finance" department.
-Retrieve the names of employees whose salary is greater than 50,000.
-Find employees who have worked on a project with the status of "in-progress".
-Update the salary of the employee with the name "Sam Wilson" to 45,000.
-Find all employees whose age is between 30 and 40.
-Delete the employee document with the name "Bruce Wayne".
-Add a new project "Project G" with the status of "not-started" to the employee "Sam Wilson".
-Find employees who have no projects assigned.
-Retrieve the total number of employees in each department.
-Sort employees by their salary in descending order.
+*) Find all employees working in the "Finance" department.
+        db.employees.find({department:"Finance"}); 
+
+*) Retrieve the names of employees whose salary is greater than 50,000.
+        db.employees.find({salary:{$gt:50000}});
+
+*) Find employees who have worked on a project with the status of "in-progress".
+        db.employees.find({"projects.status":"in-progress"}) 
+
+*) Update the salary of the employee with the name "Sam Wilson" to 45,000.
+        db.employees.updateOne({name:"Sam Wilson"},{$set:{salary:45000}});
+
+*) Find all employees whose age is between 30 and 40.
+        db.employees.find({age:{$gt:30,$lt:40}}) 
+
+*) Delete the employee document with the name "Bruce Wayne".
+        db.employees.deleteOne({name:"Bruce Wayne"})
+
+*) Add a new project "Project G" with the status of "not-started" to the employee "Sam Wilson".
+        db.employees.updateOne( { name: "Sam Wilson" }, { $push: { projects: { name: "Project G", status: "not-started" } } } );
+
+*) Find employees who have no projects assigned.
+        db.employees.find({projects:{$size:0}}) 
+
+*) Retrieve the total number of employees in each department.
+        db.employees.aggregate([{$group:{_id:"$department",totalEmployees:{$sum:1}}}])
+
+*) Sort employees by their salary in descending order.
+        db.employees.find().sort({salary:-1})
 
 
 
