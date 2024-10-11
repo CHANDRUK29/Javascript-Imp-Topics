@@ -195,7 +195,53 @@
 
 
 
+====================================================================================================================
 
+// Query Practices
+
+db.employees.insertMany([
+  {
+    "_id": 4,
+    "name": "Sam Wilson",
+    "age": 25,
+    "department": "Marketing",
+    "salary": 40000,
+    "projects": [
+      { "name": "Project E", "status": "completed" },
+      { "name": "Project F", "status": "in-progress" }
+    ]
+  },
+  {
+    "_id": 5,
+    "name": "Sarah Connor",
+    "age": 37,
+    "department": "Operations",
+    "salary": 65000,
+    "projects": [
+      { "name": "Project G", "status": "completed" }
+    ]
+  },
+  {
+    "_id": 6,
+    "name": "Bruce Wayne",
+    "age": 45,
+    "department": "Finance",
+    "salary": 90000,
+    "projects": []
+  }
+]);
+
+
+Find all employees working in the "Finance" department.
+Retrieve the names of employees whose salary is greater than 50,000.
+Find employees who have worked on a project with the status of "in-progress".
+Update the salary of the employee with the name "Sam Wilson" to 45,000.
+Find all employees whose age is between 30 and 40.
+Delete the employee document with the name "Bruce Wayne".
+Add a new project "Project G" with the status of "not-started" to the employee "Sam Wilson".
+Find employees who have no projects assigned.
+Retrieve the total number of employees in each department.
+Sort employees by their salary in descending order.
 
 
 
