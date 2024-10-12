@@ -199,6 +199,7 @@
 
 // Query Practices
 
+//Employees
 db.employees.insertMany([
   {
     "_id": 4,
@@ -263,7 +264,60 @@ db.employees.insertMany([
         db.employees.find().sort({salary:-1})
 
 
+================================================================================================
 
+// products 
+
+db.products.insertMany([
+  {
+    "_id": 101,
+    "name": "Laptop",
+    "category": "Electronics",
+    "price": 1200,
+    "stock": 50,
+    "ratings": [
+      { "user": "John", "rating": 5 },
+      { "user": "Jane", "rating": 4 }
+    ]
+  },
+  {
+    "_id": 102,
+    "name": "Smartphone",
+    "category": "Electronics",
+    "price": 800,
+    "stock": 120,
+    "ratings": [
+      { "user": "Mike", "rating": 4 },
+      { "user": "Alice", "rating": 5 }
+    ]
+  },
+  {
+    "_id": 103,
+    "name": "Washing Machine",
+    "category": "Home Appliances",
+    "price": 600,
+    "stock": 30,
+    "ratings": [
+      { "user": "Sam", "rating": 3 }
+    ]
+  }
+]);
+
+
+*) Find all products in the "Electronics" category.
+     db.products.find({category:"Electronics"})
+
+*) Retrieve the names and prices of products priced above 800.
+    
+
+*) Find products that have a rating of 5 from any user.
+*) Update the stock of the product with the name "Smartphone" to 100.
+*) Find all products where the stock is less than 50.
+*) Delete the product document with the name "Washing Machine".
+*) Add a new rating from user "Sara" with a rating of 4 to the product "Laptop".
+*) Find all products where the price is between 600 and 1200.
+*) Retrieve the average rating of the product "Laptop".
+*) Sort products by their price in ascending order.
 
 
 
