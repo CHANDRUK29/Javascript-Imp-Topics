@@ -305,16 +305,26 @@ db.products.insertMany([
 
 
 *) Find all products in the "Electronics" category.
-     db.products.find({category:"Electronics"})
+    db.products.find({category:"Electronics"})
 
 *) Retrieve the names and prices of products priced above 800.
-    
+    db.products.find({price:{$gt:800}})
 
 *) Find products that have a rating of 5 from any user.
+    db.products.find({"ratings.rating":{$eq:5}})
+
 *) Update the stock of the product with the name "Smartphone" to 100.
+    db.products.updateOne({name:"Smartphone"},{$set:{stock:100}})
+
 *) Find all products where the stock is less than 50.
+    db.products.find({stock:{$lt:50}})
+
 *) Delete the product document with the name "Washing Machine".
+    db.products.deleteOne({name:"Washing Machine"})
+
 *) Add a new rating from user "Sara" with a rating of 4 to the product "Laptop".
+    db.products.updateOne({name:"Laptop"},{$push:{ratings:{user:"Sara",rating:4}}})
+
 *) Find all products where the price is between 600 and 1200.
 *) Retrieve the average rating of the product "Laptop".
 *) Sort products by their price in ascending order.
