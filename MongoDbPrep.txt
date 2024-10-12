@@ -189,8 +189,11 @@
                 *) $push: Adds an element to an array
 
             
+26) unwind Operator vs reduce Operator?
+    $unwind is an aggregation pipeline stage, which deconstructs the output by each element in a array
+    (i.e) Used to deconstruct an array field in a document and create separate output documents for item in array.
 
-
+    $reduce is an aggregation pipeline operator used to combine elements in an array.(similar to reduce function in js)
 
 
 
@@ -326,11 +329,133 @@ db.products.insertMany([
     db.products.updateOne({name:"Laptop"},{$push:{ratings:{user:"Sara",rating:4}}})
 
 *) Find all products where the price is between 600 and 1200.
+    db.products.find({price:{$gt:600,$lt:1200}})
+
 *) Retrieve the average rating of the product "Laptop".
+    db.products.aggregate([
+        {$match:{name:"Laptop"}},
+        {$unwind:"$ratings"},
+        {$group:{_id:"$name",averageRating:{$avg:"$ratings.rating"}}}
+        ])
+
 *) Sort products by their price in ascending order.
+    db.products.find().sort({price:1}) 
+                    (OR)
+    db.products.aggregate([{$sort:{price:1}}])
+
+*) Fetch only the name of products:
+    db.products.aggregate([{$project:{name:1}}])
+                (OR)
+    db.products.find({},{name:1})
 
 
+=========================================================================================
 
+// Customers
+
+db.customers.insertMany([
+  {
+    "_id": 201,
+    "name": "Tom Hardy",
+    "age": 35,
+    "location": "New York",
+    "purchases": [
+      { "product": "Laptop", "quantity": 1, "date": "2024-01-15" },
+      { "product": "Smartphone", "quantity": 2, "date": "2024-03-10" }
+    ]
+  },
+  {
+    "_id": 202,
+    "name": "Emily Blunt",
+    "age": 28,
+    "location": "Los Angeles",
+    "purchases": [
+      { "product": "Washing Machine", "quantity": 1, "date": "2024-02-20" }
+    ]
+  },
+  {
+    "_id": 203,
+    "name": "Chris Hemsworth",
+    "age": 38,
+    "location": "San Francisco",
+    "purchases": [
+      { "product": "Laptop", "quantity": 1, "date": "2024-04-12" }
+    ]
+  }
+]);
+
+
+    *) Find all customers who live in "New York".
+        db.customers.find();
+
+    *) Retrieve the names and locations of customers whose age is above 30.
+         db.customers.find({age:{$gt:30}},{name:1,location:1})
+
+    *) Find customers who purchased a "Laptop".
+        db.customers.find({"purchases.product":"Laptop"})
+                (OR)
+        db.customers.aggregate([
+            {
+              $match: {"purchases.product": "Laptop"}
+            }
+            ]);
+
+    *) Update the location of the customer "Chris Hemsworth" to "Chicago".
+        db.customers.updateOne({name:"Chris Hemsworth"},{$set:{location:"Chicago"}})
+
+    *) Find all customers who have made more than one purchase.
+        db.customers.find({$where:"this.purchases.length>1"})
+                    (OR)
+        db.customers.find({purchases:{$exists:true,$not:{$size:1}}})
+                    (OR)
+        db.customers.aggregate([
+            {
+              $project: {
+                name: 1,
+                purchasesCount: { $size: "$purchases" }
+              }
+            },
+            {
+              $match: {
+                purchasesCount: { $gt: 1 }
+              }
+            }
+        ]);
+
+
+    *) Delete the customer document with the name "Emily Blunt".
+        db.products.deleteOne({name:"Emily Blunt"})
+
+    *) Add a new purchase of "Smartphone" with quantity 1 and date "2024-05-01" to the customer "Tom Hardy".
+        db.customers.updateOne(
+                { name: "Tom Hardy" },          
+                { 
+                  $push: {                      
+                    purchases: {
+                      product: "Smartphone", 
+                      quantity: 1, 
+                      date: "2024-05-01"
+                    }
+                  }
+                }
+            );
+
+    *) Find all customers whose age is less than 30.
+        db.customers.find({age:{$lt:30}})
+
+    *) Retrieve the total number of purchases for each customer.
+        db.customers.aggregate([
+            {
+                $project:
+                {
+                    name:1,
+                    totalpurchases:{$size:"$purchases"}
+                }
+            }
+        ])
+
+    *) Sort customers by their age in descending order.
+        db.customers.find().sort({age:-1})
 
 
 
