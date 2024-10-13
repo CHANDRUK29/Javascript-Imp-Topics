@@ -452,7 +452,8 @@ db.customers.insertMany([
                     totalpurchases:{$size:"$purchases"}
                 }
             }
-        ])
+        ]);
+
 
     *) Sort customers by their age in descending order.
         db.customers.find().sort({age:-1})
