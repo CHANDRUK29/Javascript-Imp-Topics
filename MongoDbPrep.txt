@@ -528,13 +528,71 @@ db.orders.insertMany([
 
   *) Retrieve the total value of all orders combined.
       db.orders.aggregate([{$group:{_id:null,totalValue:{$sum:"$total"}}}])
+
   *) Sort orders by their orderDate in ascending order.
       db.orders.find().sort({orderedDate:1})
 
 
+====================================================================================================
+
+//courses
+
+db.courses.insertMany([
+  {
+    "_id": 401,
+    "title": "Introduction to Node.js",
+    "instructor": "John Doe",
+    "duration": 40,
+    "studentsEnrolled": 150
+  },
+  {
+    "_id": 402,
+    "title": "Advanced MongoDB",
+    "instructor": "Jane Smith",
+    "duration": 60,
+    "studentsEnrolled": 100
+  },
+  {
+    "_id": 403,
+    "title": "React.js for Beginners",
+    "instructor": "Mike Brown",
+    "duration": 30,
+    "studentsEnrolled": 200
+  }
+]);
 
 
+  *) Find all courses taught by "John Doe".
+      db.courses.find({instructor:"John Doe"})
 
+  *) Retrieve the titles and durations of courses that have more than 100 students enrolled.
+      db.courses.find({studentsEnrolled:{$gt:100}},{title:1,duration:1})
+
+  *) Find courses where the duration is greater than 40.
+      db.courses.find({duration:{$gt:40}})
+
+  *) Update the instructor of the course "React.js for Beginners" to "Sarah Lee".
+      db.courses.updateOne({title:"React.js for Beginners"},{$set:{"instructor":"Sarah Lee"}})
+
+  *) Find all courses where the number of students enrolled is less than 150.
+      db.courses.find({"studentsEnrolled":{$lt:150}})
+
+  *) Delete the course with the title "Advanced MongoDB".
+      db.courses.deleteOne({title:"Advanced MongoDB"});
+
+  *) Add 50 students to the "Introduction to Node.js" course.
+      db.courses.updateOne({title: "Introduction to Node.js"},{$inc:{studentsEnrolled: 50}});
+
+  *) Find all courses where the duration is between 30 and 60.
+      db.courses.find({duration:{$gt:30,$lt:60}})
+
+  *) Retrieve the total number of students enrolled across all courses.
+      db.courses.aggregate([
+        {$group:{_id:null,totalNoOfStudents:{$sum:"$studentsEnrolled"}}}
+      ])
+
+  *) Sort courses by the number of students enrolled in descending order
+      db.courses.find().sort({studentsEnrolled:-1})
 
 
 
