@@ -220,9 +220,17 @@
 29) VIEW VS CTE in sql?
         A view is a virtual table and that is not part of the physical schema.
         A view doesn’t store the output of a particular query — it stores the query itself.
-
+        
         CTEs or Common Table Expressions are a special type of subquery that is declared before the main query.
-        It also could be understood as a temporary table.
+        It’s like creating a named temporary table that exists only for the duration of your query.
+        EG:
+        WITH SalesCTE AS (
+            SELECT product, SUM(sales) AS total_sales
+            FROM sales_data
+            GROUP BY product
+        )
+        SELECT * FROM SalesCTE WHERE total_sales > 1000;
+
 
 
 
