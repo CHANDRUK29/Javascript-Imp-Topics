@@ -232,6 +232,9 @@
         SELECT * FROM SalesCTE WHERE total_sales > 1000;
 
 
+29) A) What is Cursor In SQL?
+        A cursor is a database object used to retrieve, manipulate, and navigate through a set of rows 
+        returned by a query, one row at a time. It allows you to handle row-by-row processing.
 
 
 30) What is recursive query in sql?
