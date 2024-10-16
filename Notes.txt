@@ -59,6 +59,7 @@ ingredients you need for the first step of the recipe as you go along; essential
 eager loading is "get everything now" and lazy loading is "get it when you need it" to optimize performance and 
 save resources.
 
+
 What is JavaScript ?
 	JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. 
 	It is also known as the scripting language for webpages. It is well-known for the development of web pages, 
@@ -74,6 +75,7 @@ What is Node Js?
 	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
 	concurrently without blocking the execution of other code. This makes it ideal for building 
     high-performance, scalable applications.
+
 
  what is Express JS ?
 	Express is a most popular Javascript framework that provides a wide set of features to develop 
