@@ -5,7 +5,8 @@
 	Key Features of Node.js:
 	Event-driven, non-blocking I/O model:
 	Node.js uses an event-driven architecture, which means that it can handle multiple requests 
-	concurrently without blocking the execution of other code. This makes it ideal for building high-performance, scalable applications.
+	concurrently without blocking the execution of other code. This makes it ideal for building high-performance,
+	scalable applications.
 
 
 2) Why use Node.js?
@@ -107,7 +108,10 @@
 
 
 16) What is the control flow function?
-	The control flow function is a piece of code that runs in between several asynchronous function calls.
+	Control flow in Node.js refers to the order in which statements and functions are executed.
+	Due to its asynchronous nature, Node.js uses specific patterns and constructs to manage how
+	tasks are performed, particularly when dealing with operations like I/O, network requests,
+	and file system access.
 
 
 17) How does control flow manage the function calls?
@@ -118,11 +122,21 @@
 
 
 18) What is the difference between fork() and spawn() methods in Node.js?
-	The fork() method is a specialized version of spawn() that is specifically designed for
-	spawning new Node.js processes. It creates a new instance of the V8 engine to run a separate Node.js script.
+	In Node.js, both spawn and fork are methods used to create child processes,
+	but they serve different purposes and behave differently
+	SPAWN=> Purpose: Used to launch a new process and execute a command.
+	FORK=> Purpose: Specifically used to create a new Node.js process that runs a JavaScript file.
 
-	The spawn() method is used to launch a new process with a given command. It allows you to execute external 
-	commands and interact with the child process’s input and output streams in real time.
+| Feature           | fork                                   | spawn                                |
+|-------------------|----------------------------------------|--------------------------------------|
+| Process Type      | Node.js process running a JS file      | Any external command/process          |
+| Communication     | IPC (Inter-Process Communication)      | Standard input/output streams        |
+| Use Case          | Running Node.js apps with message passing | Executing shell commands or scripts   |
+| Return Value      | Returns a ChildProcess instance for Node.js | Returns a ChildProcess instance for external commands |
+| Data Exchange     | Supports message passing with process.send() | Uses standard streams for output and error handling |
+| Overhead          | Slightly more overhead due to IPC setup | Lower overhead, especially for simple commands |
+
+
 
 19) What is piping in Node.js?
 	Piping is a mechanism used to connect the output of one stream to another stream. 
@@ -142,11 +156,10 @@
 
 22) For Node.js, why does Google use the V8 engine?
 	The V8 engine, developed by Google, is open-source and written in C++. Google Chrome makes use of this engine.
-	V8,unlike the other engines, is also utilized for the popular Node.js runtime. V8 was initially intended to improve 
+	And Node js runtime also utilises the V8 engine . V8 was initially intended to improve 
 	the speed of JavaScript execution within web browsers. Instead of employing an interpreter, V8 converts JavaScript 
 	code into more efficient machine code to increase performance. It turns JavaScript code into machine code during
-	execution by utilizing a JIT (Just-In-Time) compiler, as do many current JavaScript engines such as 
-	SpiderMonkey or Rhino (Mozilla).
+	execution by utilizing a JIT (Just-In-Time) compiler.
 
 
 23) What is Middleware In Node Js?
@@ -184,9 +197,13 @@
 
 
 29) What is the advantage of using Node.js?
-	Node.js is fast and scalable. Node.js is easy to learn and use. Node.js is well-suited for real-time applications, 
-	such as chat applications, online games, and streaming services. This is because Node.js can handle a large number 
-	of connections and can perform non-blocking I/O operations, which makes it ideal for real-time communication.
+	Node.js is fast and scalable.
+	Node.js is easy to learn and use. 
+	Node.js is well-suited for real-time applications, 
+	such as chat applications, online games, and streaming services.
+	This is because Node.js can handle a large number 
+	of connections and can perform non-blocking I/O operations,
+	which makes it ideal for real-time communication.
 
 
 30) What is the difference between Node.js and Ajax?
