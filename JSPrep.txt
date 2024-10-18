@@ -95,10 +95,12 @@
 
 13) What are classes in ES6 ?
 	Classes are nothing but syntatic sugar for constructor functions.
+	Classes in JavaScript provide a structured way to create objects and handle inheritance, making your 
+	code more organized
 
 14) what is constructor?
 	It is a special function that creates and initializes an object instance of class. constructor gets
-	called when yo declare an object using "new" keyword.
+	called when you declare an object using "new" keyword.
 
 15) What are modules?
 	modules are encapsulated units of code that can be reused across different parts of an 
