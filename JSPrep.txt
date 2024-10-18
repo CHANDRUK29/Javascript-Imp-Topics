@@ -173,6 +173,149 @@
 	to process.nextTick() will be resolved before the event loop continues.
  	This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
 
+29) OOPS IN JAVASCRIPT:
+	Object-Oriented Programming (OOP) in JavaScript revolves around a few core concepts: 
+		Objects 
+		Classes 
+		Inheritance 
+		Encapsulation
+		Abstraction 
+		Polymorphism
+
+
+	OBJECTS:
+		An object is a collection of properties (key-value pairs). In JavaScript, everything is an object.
+
+		let car = {
+    brand: "Toyota",
+    model: "Camry",
+    year: 2021,
+    start: function() {
+        console.log("Car started!");
+    }
+};
+
+console.log(car.brand); // Toyota
+car.start(); // Car started!
+
+
+	CLASSES:
+		Classes are blueprints for creating objects.
+		They encapsulate data and functions that operate on that data.
+
+		class Car {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+
+    start() {
+        console.log("Car started!");
+    }
+}
+
+let myCar = new Car("Honda", "Civic", 2022);
+console.log(myCar.model); // Civic
+myCar.start(); // Car started!
+
+
+	ENCAPSULATION:
+		Encapsulation is a concept used in object-oriented programming to
+		bundle data and methods into easy-to-use units. 
+
+		class BankAccount {
+	constructor(accountNumber, accountHolderName, balance) {
+		this._accountNumber = accountNumber;
+		this._accountHolderName = accountHolderName;
+		this._balance = balance;
+	}
+
+	showAccountDetails() {
+		console.log(`Account Number: ${this._accountNumber}`);
+		console.log(`Account Holder Name: ${this._accountHolderName}`);
+		console.log(`Balance: ${this._balance}`);
+	}
+
+	deposit(amount) {
+		this._balance += amount;
+		this.showAccountDetails();
+	}
+
+	withdraw(amount) {
+		if (this._balance >= amount) {
+			this._balance -= amount;
+			this.showAccountDetails();
+		} else {
+			console.log("Insufficient Balance");
+		}
+	}
+}
+
+let myBankAccount = new BankAccount("123456", "John Doe", 1000);
+myBankAccount.deposit(500); 
+// Output: Account Number: 123456 Account Holder Name: 
+//John Doe Balance: 150
+
+
+	ABSTRACTION:
+		Abstraction in oops is an essential feature of Object Oriented Programming, which implies
+		only keeping the essentials and removing unnecessary information. 
+		Abstraction in OOPS is used to hide unnecessary information and display only 
+		necessary information to the users interacting.
+
+	INHERITANCE:
+		Inheritance allows a class to inherit properties and methods from another class.
+
+	POLYMORPHISM:
+		The word polymorphism means having many forms. In simple words, we can define polymorphism as 
+		the ability of a message to be displayed in more than one form. 
+		Polymorphism allows methods to do different things based on the object it is acting upon. 
+		This can be achieved through method overriding.
+
+	MethodOverloading VS MethodOverriding IN Js
+
+		Method overloading refers to defining multiple methods with the same name but different parameters 
+		within the same class, while method overriding involves creating a method in the child class that 
+		has the same name, parameters, and return type as a method in the parent class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
