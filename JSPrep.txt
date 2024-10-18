@@ -28,11 +28,29 @@
 	First-class functions means when functions in that language are treated like any other variable.
 	Function can be passed as an argument to other functions, can be returned by another function 
 	and can be assigned as a value to a variable.
-	
+
+	EG : function greet(name) {
+    		return `Hello, ${name}!`;
+	}
+	// Assigning a function to a variable
+	const greeting = greet;
+	console.log(greeting("Alice"));  // Output: Hello, Alice!
+
 
 6) What is a higher order function ?
 	A higher-order function is a function that accepts another function as an argument or 
-	returns a function as a return value or both. 
+	returns a function.
+
+	EG: function apply(func, value) {
+  		return func(value);
+		}
+
+		function multiply(val) {
+  			return val * val
+		}
+
+		const data = apply(multiply, 5)
+		console.log(data)
 
 
 7) What is the currying function?
@@ -112,7 +130,18 @@
 
 
 20) What is a callback function ?
-	A callback function is a function passed into another function as an argument.
+	A callback function is a function passed into another function as an argument and is executed at a later point.
+	EG: function fetchData(callback) {
+    		const data = "Sample Data";
+    		callback(data);
+		}
+
+	    function printData(data) {
+    		console.log(`Received: ${data}`);
+		}
+
+		fetchData(printData);  // Output: Received: Sample Data
+
 
 
 21) What is a callback hell ?
