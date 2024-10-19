@@ -37,6 +37,7 @@
 	console.log(greeting("Alice"));  // Output: Hello, Alice!
 
 
+
 6) What is a higher order function ?
 	A higher-order function is a function that accepts another function as an argument or 
 	returns a function.
