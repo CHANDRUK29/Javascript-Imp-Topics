@@ -300,15 +300,48 @@
 
 
 
+36) Explain the Difference between DELETE and TRUNCATE in SQL?
+        DELETE: This command removes rows from a table based on a specified condition. 
+                You can use a WHERE clause to delete specific rows. If no condition is specified, 
+                all rows will be deleted, 
+
+        TRUNCATE: This command removes all rows from a table without logging individual row deletions. 
+                It effectively resets the table to its empty state, and it cannot be used with a WHERE clause.
 
 
 
+37) what are the different types of sql commands?
+        1)Data Query Language (DQL)
+            SELECT: Used to retrieve data from one or more tables.
+
+        2)Data Definition Language (DDL)
+            CREATE: Used to create new tables, views, indexes, etc.
+            ALTER: Used to modify the structure of an existing database object (e.g., adding or deleting columns).
+            DROP: Used to delete database objects like tables, views, or indexes.
+            TRUNCATE: Used to remove all rows from a table while preserving its structure.
+
+        3) Data Manipulation Language (DML)
+            INSERT: Used to add new rows to a table.
+            UPDATE: Used to modify existing rows in a table.
+            DELETE: Used to remove rows from a table.
+
+        4) Data Control Language (DCL)
+            GRANT: Used to give users access privileges to database objects.
+            REVOKE: Used to take away access privileges from users.
+
+        5) Transaction Control Language (TCL)
+            COMMIT: Saves all changes made in the current transaction.
+            ROLLBACK: Undoes changes made in the current transaction.
+            SAVEPOINT: Sets a point within a transaction to which you can later roll back
 
 
+38) Explain the Difference between char and varchar
+        Use CHAR for fixed-length strings to optimize performance and storage when the string
+        length is consistent. 
+        Use VARCHAR for variable-length strings to save space and allow for greater flexibility.
 
 
-
-
+39) 
 
 
 
