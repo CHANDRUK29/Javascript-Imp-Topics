@@ -341,18 +341,62 @@
         Use VARCHAR for variable-length strings to save space and allow for greater flexibility.
 
 
-39) 
+39)  what is the difference between sql and mysql
+        SQL (Structured Query Language):
+            A standard programming language used to manage and manipulate relational databases.
+            It includes commands for querying data, updating records, and defining 
+            database structures (DDL, DML, DQL, DCL).
+
+        MySQL:
+            An open-source relational database management system (RDBMS) that uses SQL as its 
+            query language. It is one of the most popular databases used for web applications.
 
 
+40) Explain the concept of null in sql
+        NULL is a special marker used in SQL to indicate that a data value does not exist in 
+        the database. It is not the same as an empty string ('') or a number with a value 
+        of zero (0); it signifies that the value is unknown or missing.
 
 
+41) Difference between Where and Having clause in sql
+
+        WHERE:Used to filter records before any groupings are made. 
+        It applies to individual rows in the table.
+
+        HAVING:Used to filter records after groupings have been made. 
+        It applies to the results of aggregate functions in a GROUP BY clause.
 
 
+42) How do you use GroupBy and Having clause?
+        The GROUP BY clause is used to group rows that have the same values in specified
+        columns into summary rows. It is commonly used with aggregate functions 
+        (like SUM, COUNT, AVG, etc.) to produce summary statistics.
+
+        The HAVING clause is used to filter records after the GROUP BY operation. 
+        It allows you to specify conditions on aggregate functions.
 
 
+42) Difference between RANK and DENSE_RANK in sql
+        
+        RANK:Assigns a unique rank to each distinct row within a partition.
+        If two or more rows have the same value, they receive the same rank, 
+        but the next rank will skip the subsequent numbers.
 
+        Player	    Score	rank_value
+            A	    100	        1
+            B	    100	        1
+            C	    90	        3
+            D	    80	        4
 
+        DENSE_RANK:Similar to RANK, but it does not skip any ranks after ties. 
+        If two or more rows have the same value, they receive the same rank, 
+        and the next rank continues from the next sequential number.
 
+        Player	    Score	rank_value
+            A	    100	        1
+            B	    100	        1
+            C	    90	        2
+            D	    80	        3
 
 
 
