@@ -176,7 +176,6 @@ what is React Js?
     by following the principle of least privilege, granting only the necessary permissions to users and services.
 
 
-
 10. How do you handle errors in your Node.js application deployed on AWS?
     Error handling can be managed in several ways:
 
