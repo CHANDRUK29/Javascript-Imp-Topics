@@ -1,5 +1,4 @@
 // creating a empty array in javascript
-
 let arr = []
 let arr2 = new Array()
 console.log(arr, arr2)
