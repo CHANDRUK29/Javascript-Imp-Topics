@@ -313,10 +313,14 @@ myBankAccount.deposit(500);
 		has the same name, parameters, and return type as a method in the parent class.
 
 
-
-
-
-
+30) Types of Fuctions In Javascript?
+	Named Function
+	Anonymous Function
+	Function Expression
+	Arrow Function
+	IIFE
+	CallBack Function
+	Higher Order Function
 
 
 
