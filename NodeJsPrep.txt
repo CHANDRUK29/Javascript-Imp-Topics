@@ -294,7 +294,15 @@
 		It used to break up the file into smaller chunks and then read it.
 		The default chunck size is 64KB.
 
-
+46) Describe the steps how does the control flow executes function calls?
+	*) Function Declaration or Expression : Before a function can be called, it must be defined.
+	*) Calling a Function : Once a function is defined, it can be invoked (called).
+	*) Creating a Call Stack : When a function is called, it creates a new execution context and 
+				    is pushed onto the call stack.
+	*) Executing the Function : Once the function is at the top of the call stack, its code starts executing.
+	*) Returning a Value : When the function completes execution, it may return a value using the return statement.
+	*) Popping the Function Off the Call Stack : After the function execution is complete, the execution context
+						     of that function is removed (popped) from the call stack.
 
 
 
