@@ -157,10 +157,12 @@
 	The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining.
 
 
-23) What is promise.all?
-	Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved 
+23) What is promise.all vs Promise.allSettled?
+	Promise.all: It is a promise that takes an array of promises as an input (an iterable), and it gets resolved 
 	when all the promises get resolved or any one of them gets rejected.
 
+	Promise.allSettled: It returns a promise that resolves to an array of objects, where each object 
+	represents the outcome of each promise (either resolved or rejected).
 
 24) What is a strict mode in javascript?
 	In EcmaScript 5 a new feature called javascript strict mode allows you to write code or function
