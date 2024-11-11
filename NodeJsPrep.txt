@@ -120,6 +120,17 @@
 	*)Limit Concurrency
 	*)Call the next step in program.
 
+18) What are child Process in Node js?
+	The child_process module provides several methods to create and control child processes,
+	each serving different purposes depending on the level of control and interaction 
+	you need with the spawned process.
+
+	exec(): Executes a command in a shell and buffers the output.
+	execFile(): Directly executes a file without a shell, which is more efficient than exec()
+	for simple scripts or commands.
+	spawn(): Launches a new process with a given command, providing streams for stdin, stdout, and stderr.
+	fork(): A specialized version of spawn() specifically designed to spawn new Node.js processes and establish a 		communication channel between the parent and child.
+
 
 18) What is the difference between fork() and spawn() methods in Node.js?
 	In Node.js, both spawn and fork are methods used to create child processes,
