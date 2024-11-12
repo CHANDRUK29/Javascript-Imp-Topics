@@ -408,6 +408,14 @@
         Correlated Subqueries depend on the outer query and are executed multiple times,
         while Non-Correlated Subqueries are independent and executed just once.
 
+        Correlated subqueries can be slow because the subquery is evaluated for each row 
+        processed by the outer query. If there are many rows in the outer query, this can 
+        result in significant performance overhead.
+    
+        Non-correlated subqueries are generally more efficient since they are only evaluated once. 
+        The result of the subquery is typically used for all rows in the outer query,
+        making it better for large datasets.
+
 
 44) How do you optimize sql queries?
         *) Use Proper Indexing
