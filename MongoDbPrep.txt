@@ -52,6 +52,14 @@
     MongoDB stores data in BSON (Binary JSON) format, a binary-encoded serialization of JSON-like documents.
     These documents are stored in collections within databases.
 
+7) A) What are Different Data Models in MongoDb?
+        Embedded Data Model : Data is stored together in the same document.(similar to denormalization)
+                              Data is duplicated if used in multiple documents.
+                              Harder to update; requires updating the entire document.
+
+        Referenced Data Model: Data is stored in separate documents (collections).(similar to normalization)
+                               Data is normalized, no duplication.
+                               Easier to update; update just the referenced document.
 
 8) What is a primary key in MongoDB?
     In MongoDB, the `_id` field serves as the primary key for a document. 
