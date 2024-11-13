@@ -260,6 +260,14 @@
          matches any of the specified values.
 
 
+31) What is Shard Key?
+        shard key is a field or set of fields that determines how data is distributed across 
+        different shards in a sharded cluster.
+
+    Types Of Shard Key:
+        Ranged Key : eg(1 to 100, 101 to 200)
+        Hashed Key : Hash based Key 
+        Regional Key : Regions based Key
 
 
 
