@@ -6,6 +6,12 @@
     Collection - A group of mongodb documents.
     document - A way to organize and store data as a set of field-value pairs.
 
+1) a) Types of NoSQL Databases?
+        *) Key-value pairs : Redis,Riak
+        *) Document Based : MongoDb,counchBase
+        *) column Based : Cassandra, HBase
+        *) Graph Based : Neo4J, Big Data
+
 
 2) What are the advantages of mongodb?
     *)MongoDB supports field, range-based, string pattern matching type queries
