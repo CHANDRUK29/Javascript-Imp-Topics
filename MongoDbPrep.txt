@@ -63,6 +63,7 @@
                                Data is normalized, no duplication.
                                Easier to update; update just the referenced document.
 
+
     B) What is Capped Collection in MongoDB?
         capped collection is a special type of collection that has a fixed size and maintains 
         insertion order. When a capped collection reaches its size limit, it automatically 
@@ -74,6 +75,12 @@
             size: 1048576,    // Set the size limit (1MB = 1048576 bytes)
             max: 1000         // Optional: limit the collection to 1000 documents
         });
+
+
+    C) How can you store images, videos and other Large files (>16MB) in MongoDb?
+        GridFS is a driver specification for uploading and retrieval of MongoDb files 
+        Larger than 16 MB. GridFs divides large files into equal Chunks and stores them
+        as a Separate documents.
 
 
 8) What is a primary key in MongoDB?
