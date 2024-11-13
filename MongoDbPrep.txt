@@ -231,6 +231,11 @@
     $reduce is an aggregation pipeline operator used to combine elements in an array.(similar to reduce function in js)
 
 
+27) what are some utilites for BackUp and Restoring in MongoDb?
+        *) Mongo Import
+        *) Mongo Export
+        *) Mongo Dump
+        *) Mongo Restore
 
 
 ====================================================================================================================
