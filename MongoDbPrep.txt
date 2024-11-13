@@ -247,6 +247,22 @@
         reduce function: Processes the output of the map function and combines the results based on the keys.
         finalize function (optional): Optionally, you can define a finalize function to perform post-reduce operations.
 
+
+29) What is the Role of Profiler in MongoDb?
+     Profiler is used to collect information regarding the queries which are executed on individual 
+    database instance.
+
+
+30) Difference Between $all and $in operators in mongodb?
+    $all: Use when you need to check if an array field contains all the specified 
+          elements, regardless of order.
+    $in: Use when you need to check if a field (either an array or a single value field) 
+         matches any of the specified values.
+
+
+
+
+
 ====================================================================================================================
 
 // Query Practices
