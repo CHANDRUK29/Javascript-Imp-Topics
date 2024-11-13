@@ -40,6 +40,7 @@
     accessing the database.
     It supports efficient execution of queries in mongodb.
 
+
 6) Explain Sharding ?
     Sharding is a type of database partioning in which large database is divided or partitioned into 
     smaller data and different nodes. These shards are not only smaller but also faster.
@@ -52,6 +53,7 @@
     MongoDB stores data in BSON (Binary JSON) format, a binary-encoded serialization of JSON-like documents.
     These documents are stored in collections within databases.
 
+
 7) A) What are Different Data Models in MongoDb?
         Embedded Data Model : Data is stored together in the same document.(similar to denormalization)
                               Data is duplicated if used in multiple documents.
@@ -60,6 +62,20 @@
         Referenced Data Model: Data is stored in separate documents (collections).(similar to normalization)
                                Data is normalized, no duplication.
                                Easier to update; update just the referenced document.
+
+    B) What is Capped Collection in MongoDB?
+        capped collection is a special type of collection that has a fixed size and maintains 
+        insertion order. When a capped collection reaches its size limit, it automatically 
+        removes the oldest documents to make room for new ones.
+
+        // Creating a capped collection with a size limit of 1MB
+            db.createCollection('logs', {
+            capped: true,     // Enable capped collection
+            size: 1048576,    // Set the size limit (1MB = 1048576 bytes)
+            max: 1000         // Optional: limit the collection to 1000 documents
+        });
+
+
 
 8) What is a primary key in MongoDB?
     In MongoDB, the `_id` field serves as the primary key for a document. 
