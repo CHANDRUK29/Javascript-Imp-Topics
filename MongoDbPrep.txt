@@ -69,12 +69,11 @@
         removes the oldest documents to make room for new ones.
 
         // Creating a capped collection with a size limit of 1MB
-            db.createCollection('logs', {
+        db.createCollection('logs', {
             capped: true,     // Enable capped collection
             size: 1048576,    // Set the size limit (1MB = 1048576 bytes)
             max: 1000         // Optional: limit the collection to 1000 documents
         });
-
 
 
 8) What is a primary key in MongoDB?
@@ -145,7 +144,6 @@
 18) How do you implement security in MongoDB?
     MongoDB provides a range of security capabilities, including authentication, role-based access control (RBAC), 
     SSL/TLS encryption, auditing, and network security, ensuring data safeguarding and preventing unauthorized access.
-
 
 
 19) How do you optimize query performance in MongoDB?
