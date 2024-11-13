@@ -238,6 +238,15 @@
         *) Mongo Restore
 
 
+28) What is MapReduce in Mongodb?
+    MapReduce in MongoDB is a powerful data processing mechanism that allows you to
+    perform complex aggregation operations on large datasets in a parallel.
+
+    Structure of MapReduce:
+        map function: Processes each document and outputs key-value pairs.
+        reduce function: Processes the output of the map function and combines the results based on the keys.
+        finalize function (optional): Optionally, you can define a finalize function to perform post-reduce operations.
+
 ====================================================================================================================
 
 // Query Practices
