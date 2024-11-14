@@ -669,21 +669,90 @@ db.courses.insertMany([
 
 
 
+LookUp EXAMPLE 
+
+db.departments.aggregate(
+[
+  {
+    "$match": {
+      "employeeCount": {
+        "$gt": 10
+      }
+    }
+  },
+  {
+    "$lookup": {
+      "from": "employees",
+      "localField": "_id",
+      "foreignField": "departmentId",
+      "as": "departmentEmployees"
+    }
+  }
+]
+)
 
 
 
+Handling if else for updating
+db.user1.updateMany(
+  {},
+  [
+    {
+      $set: {
+        accountStatus: {
+          $cond: {
+            if: { $gt: ["$spending", 1000] },  // Condition: spending greater than 1000
+            then: "Premium",                    // If true, set "Premium"
+            else: "Basic"                       // If false, set "Basic"
+          }
+        }
+      }
+    }
+  ]
+);
+
+
+grouping examples
+
+db.students.aggregate([{$group:{_id:'$department',averageGrade:{$avg:'$grade'}}}])
+
+db.courses.aggregate([
+        {$group:{_id:null,totalNoOfStudents:{$sum:"$studentsEnrolled"}}}
+      ])
 
 
 
+Retrieve the total number of purchases for each customer.
+        db.customers.aggregate([
+            {
+                $project:
+                {
+                    name:1,
+                    totalpurchases:{$size:"$purchases"}
+                }
+            }
+        ]);
 
 
 
-
-
-
-
-
-
+Find all customers who have made more than one purchase.
+        db.customers.find({$where:"this.purchases.length>1"})
+                    (OR)
+        db.customers.find({purchases:{$exists:true,$not:{$size:1}}})
+                    (OR)
+        db.customers.aggregate([
+            {
+              $project: {
+                name: 1,
+                purchasesCount: { $size: "$purchases" }
+              }
+            },
+            {
+              $match: {
+                purchasesCount: { $gt: 1 }
+              }
+            }
+        ]);
 
 
 
