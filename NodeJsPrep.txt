@@ -316,8 +316,14 @@
 						     of that function is removed (popped) from the call stack.
 
 
+47) What is Load Balancer VS API Gateway ?
+	LOAD BALANCER : A load balancer is primarily responsible for distributing incoming network traffic 
+	(usually HTTP/HTTPS requests) across multiple backend servers (or services) to 
+	ensure no single server is overwhelmed.
 
-
+	API GATEWAY : An API gateway acts as a middleware component that sits between clients and backend services,
+	providing a centralized entry point for accessing various endpoints and functionalities. 
+	Its primary function is to facilitate communication, security, and management of APIs.
 
 
 
