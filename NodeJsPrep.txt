@@ -355,14 +355,35 @@
 	*) Elasticsearch is widely used for full-text search, log analysis, real-time analytics, and monitoring.
 
 
+51) What are the types of middlewares?
+	There are mainly five types of Middleware in Express.js:
+
+	Application-level middleware - (EG)app.use()
+	Router-level middleware - (EG) express.Router
+	Error-handling middleware
+	Built-in middleware - (EG) express.json,express.static,express.urlencoded
+	Third-party middleware - cors,morgan,helmet,passport
 
 
+52)  Explain what CORS is in Express JS?
+	CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers to 
+	control how web pages in one domain can request and interact with resources hosted on another domain.
 
 
+53) How to secure Express.Js application?
+	It is very important to secure your application to protect it against various security threats. 
+	We can follow few best practices in our Express.js app to enhance the security of our application.
 
-
-
-
+	*)Keep Dependencies Updated: Regularly update your project dependencies, 
+				     including Express.js and other npm packages.
+	*)Use Helmet Middleware: The helmet middleware helps secure your application by setting various HTTP headers.
+			         It helps prevent common web vulnerabilities.
+	*)Set Secure HTTP Headers: Configure your application to include secure HTTP headers, such as 
+				   Content Security Policy (CSP), Strict-Transport-Security (HSTS), and others.
+	*)Use HTTPS: Always use HTTPS to encrypt data in transit. Obtain an SSL certificate for your domain and 
+		     configure your server to use HTTPS.
+	*)Secure Database Access: Use parameterized queries or prepared statements to prevent SQL injection attacks. 
+				Ensure that your database credentials are secure and not exposed in configuration files.
 
 
 
