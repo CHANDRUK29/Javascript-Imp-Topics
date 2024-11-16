@@ -326,10 +326,24 @@
 	Its primary function is to facilitate communication, security, and management of APIs.
 
 
+48) What is Cluster and Basic working principle of Cluster?
+	clusters create multiple instances of a Node.js process, each running on a separate CPU core
+	The principle behind Node.js clustering is based on creating a master process that
+	manages several worker processes. Each worker runs in its own process and shares the same server port.
 
+	how it works:
+	Master Process: The master process is responsible for managing worker processes. 
+			Creates workers and listens for events (e.g., worker crashes).
+			Distributes incoming requests to workers.
 
+	Worker Processes: Handles the requests that are routed to them by the master process.
+	Load Balancing: The Cluster module in Node.js automatically handles load balancing 
+			among the worker processes using the round-robin approach.
 
-
+	
+49) what is Load Balancing in Clustering?
+	Load balancing in clustering helps distribute incoming requests or tasks evenly across the nodes 
+	(workers) in a cluster to prevent any one worker from becoming overwhelmed.
 
 
 
