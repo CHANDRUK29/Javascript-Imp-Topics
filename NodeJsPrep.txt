@@ -346,7 +346,13 @@
 	(workers) in a cluster to prevent any one worker from becoming overwhelmed.
 
 
-
+50) what is elastic search and its working principle?	
+	*) Elasticsearch is a distributed search and analytics engine that stores, indexes, 
+	    and searches data in real time.
+	*) It is based on the Lucene library and is designed for horizontal scaling, 
+	   making it ideal for handling large volumes of data.
+	*) Key concepts include indices, documents, fields, shards, and replicas.
+	*) Elasticsearch is widely used for full-text search, log analysis, real-time analytics, and monitoring.
 
 
 
