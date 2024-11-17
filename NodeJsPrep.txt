@@ -383,5 +383,21 @@
 				Ensure that your database credentials are secure and not exposed in configuration files.
 
 
+54) how do you test your asynchronous code in node js ?
+	The most common tools for testing asynchronous code in Node.js are Mocha, Jest, and Chai.
+	*) Mocha allows you to test asynchronous code using callbacks, promises, or async/await.
+	*) Chai provides assertion methods like expect, should, and assert.
+	*) Jest is another powerful testing framework that has built-in support for asynchronous testing. 
+	It supports callbacks, promises, and async/await out of the box, making it easy to test asynchronous code.
+
+
+
+
+
+
+
+
+
+
 
 
