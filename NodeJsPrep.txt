@@ -391,8 +391,24 @@
 	It supports callbacks, promises, and async/await out of the box, making it easy to test asynchronous code.
 
 
-
-
+55) What is Reverse Proxy and its Purposes ?
+	A reverse proxy is a server that sits between client devices (such as web browsers) and backend servers, 
+	forwarding client requests to the appropriate backend and then returning the responses to the clients.
+	Purposes Of Reverse Proxy:
+	a) Load Balancing : The reverse proxy balances the load across these servers, 
+			    ensuring none of them become too overloaded.
+	b) Security and Anonymity : A reverse proxy can act as an additional layer of security by masking the identity
+			of the backend servers. Clients only interact with the reverse proxy, and they cannot directly 
+			access internal servers. This can help protect internal systems from attacks 
+			(e.g., DDoS attacks, SQL injection, etc.).
+	c) SSL/TLS Termination : A reverse proxy can handle the complexity of SSL/TLS encryption and decryption
+			(referred to as SSL termination), offloading this work from backend servers.
+	d) Caching : Reverse proxies can cache content (such as images, scripts, or even full web pages) to reduce the
+		load on backend servers. Cached content can be served directly by the reverse proxy without 
+		needing to request the data from the backend, improving response times and reducing server load.
+	e) Application Firewall : A reverse proxy can function as a Web Application Firewall (WAF), 
+		inspecting incoming traffic and blocking malicious requests before they reach the backend servers. 
+	
 
 
 
