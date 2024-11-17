@@ -396,7 +396,9 @@
 	forwarding client requests to the appropriate backend and then returning the responses to the clients.
 	Purposes Of Reverse Proxy:
 	a) Load Balancing : The reverse proxy balances the load across these servers, 
-			    ensuring none of them become too overloaded.
+			ensuring none of them become too overloaded.The reverse proxy can use various
+			algorithms (e.g., round-robin, least connections, IP-hash) to decide which backend server 
+			should handle the request.
 	b) Security and Anonymity : A reverse proxy can act as an additional layer of security by masking the identity
 			of the backend servers. Clients only interact with the reverse proxy, and they cannot directly 
 			access internal servers. This can help protect internal systems from attacks 
