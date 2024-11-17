@@ -347,12 +347,9 @@
 
 
 50) what is elastic search and its working principle?	
-	*) Elasticsearch is a distributed search and analytics engine that stores, indexes, 
-	    and searches data in real time.
-	*) It is based on the Lucene library and is designed for horizontal scaling, 
-	   making it ideal for handling large volumes of data.
-	*) Key concepts include indices, documents, fields, shards, and replicas.
-	*) Elasticsearch is widely used for full-text search, log analysis, real-time analytics, and monitoring.
+	Elasticsearch is a distributed search and analytics engine built on Apache Lucene. 
+	Elasticsearch has quickly become the most popular search engine and is commonly used for
+	log analytics, full-text search, security intelligence, business analytics, and operational intelligence use cases.
 
 
 51) What are the types of middlewares?
