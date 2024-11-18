@@ -432,7 +432,14 @@
 	Efficient Logging and Monitoring (e.g., winston, morgan, Prometheus, New Relic)
 
 
-
+58) Describe the key considerations for building a secure API with express js?
+	Input Validation and Sanitization.
+	Authentication and Authorization.
+	Rate Limiting.
+	Cross-Origin Resource Sharing (CORS).
+	Use HTTPS (SSL/TLS).
+	Data Encryption
+	Content Security Policy (CSP)
 
 
 
