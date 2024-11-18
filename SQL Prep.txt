@@ -470,6 +470,17 @@
         performance, and manageability.
 
 
+49) What is Triggers in Sql?
+    Trigger is a special kind of stored procedure that automatically executes (or "fires") 
+    when a specific event occurs on a particular table or view. Triggers are event-driven, 
+    meaning they are executed in response to certain actions (like inserting, updating, 
+    or deleting data).
+
+
+
+
+
+
 
 ========================================***************======================================
 
