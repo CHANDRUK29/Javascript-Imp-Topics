@@ -412,10 +412,14 @@
 		inspecting incoming traffic and blocking malicious requests before they reach the backend servers. 
 	
 
+56) How can you ensure that Express js application is scalable ?
+	*) Optimize Application Architecture - Use a MVC (Model-View-Controller) pattern
+	*) Database Scalability - Database Sharding and Replication
+	*) Load Balancing
+	*) Caching Strategies - Caching is an effective way to improve the performance and scalability of your application.
+	*) Horizontal Scaling
+	*) Monitoring and Performance Optimization
 
 
 
-
-
-
-
+================================================********************************============================================
