@@ -488,7 +488,13 @@
     OLAP systems are designed for complex querying and analysis of large volumes of data. 
     They are used to support decision-making processes and provide insights from historical data.
 
+52) EXPLAIN VS EXPLAIN ANALYZE:
 
+    EXPLAIN helps you understand the execution plan of a query, showing how the database plans to 
+    execute it (including which indexes it will use).
+
+    EXPLAIN ANALYZE not only shows the execution plan but also provides real execution statistics 
+    like actual execution time and row counts, helping you spot inefficiencies and performance bottlenecks.
 
 
 
