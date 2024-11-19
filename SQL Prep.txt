@@ -510,8 +510,11 @@
     like actual execution time and row counts, helping you spot inefficiencies and performance bottlenecks.
 
 
+53) CAST VS CONVERT:
 
-
+    Both CAST and CONVERT are used to change one data type to another, but CONVERT is more versatile,
+    especially when working with date formats. Use CAST for simple type conversions and CONVERT for more
+    advanced formatting needs, particularly with date and time.
 
 
 
