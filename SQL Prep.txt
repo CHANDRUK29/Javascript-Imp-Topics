@@ -481,6 +481,32 @@
     PIVOT is primarily used to transform rows into columns, making data more suitable for reporting or analysis.
     
 
+51) OLTP (Online Transaction Processing) VS OLAP (Online Analytical Processing):
+    OLTP systems are designed to manage and process day-to-day transactions of an organization.
+    They handle operations like inserting, updating, and deleting records.
+
+    OLAP systems are designed for complex querying and analysis of large volumes of data. 
+    They are used to support decision-making processes and provide insights from historical data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
