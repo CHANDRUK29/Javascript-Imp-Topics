@@ -97,6 +97,19 @@
     Indexes are a powerful tool used in the background of a database to speed up querying. 
     Indexes power queries by providing a method to quickly lookup the requested data.
 
+    PROS: 
+        Faster Query Execution,
+        Efficient Filtering,
+        Improved Join Performance,
+        Faster Sorting and Grouping
+
+    CONS:
+        Slower Write Operations,
+        Increased Disk Space Usage,
+        Index Maintenance Overhead
+        Inefficient Index Usage
+
+
 
 15) What is Constraints in sql?
     In a database table, we can add rules to a column known as constraints. 
