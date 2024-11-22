@@ -372,6 +372,17 @@ myBankAccount.deposit(500);
 	Higher Order Function
 
 
+31) What is Cross Site Scripting (XSS)?
+
+	Cross-Site Scripting (XSS) is a dangerous vulnerability that allows attackers to inject malicious
+	scripts into web pages, but by following best practices like input validation, output encoding, 
+	using Content Security Policy (CSP), and other security techniques, you can significantly reduce 
+	the risk of XSS attacks in your web applications.
+
+
+32) What is Content security POlicy (CSP)?
+	CSP works by adding a special HTTP header (Content-Security-Policy) to the server response, 
+	which instructs the browser to only allow content from trusted sources.
 
 
 
@@ -381,6 +392,7 @@ myBankAccount.deposit(500);
 
 
 
+=============================================************************************===========================================
 
 
 
