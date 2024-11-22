@@ -18,6 +18,25 @@
 	provides components such as the call stack, callback queue, event loop and makes use of the web APIs 
 	provided by the web browser and augments Javascript to create its multithreading illusion.
 
+3) A) what are the coercion available in javascript?
+	coercion refers to the automatic or implicit conversion of values from one type to another. 
+	There are two types of coercion:
+
+	Implicit Coercion: The automatic conversion performed by JavaScript, usually during operations 
+		like addition or comparison.
+	Explicit Coercion: When you manually convert a value to a different type using functions 
+		like String(), Number(), or Boolean().
+
+
+3) B) What is Scope in Javscript?
+	scope refers to the visibility or lifetime of variables, functions, and objects in different parts of the code
+	Global Scope:These variables are accessible anywhere in the code.
+	Local Scope:
+		There are two types of local scopes:
+			Function Scope: Variables declared with var inside a function.
+			Block Scope: Variables declared with let or const inside a block (e.g., if, for).
+
+	
 
 4) What is Callback Hell?
 	Callback Hell, also known as "Pyramid of Doom", refers to a situation where multiple nested 
