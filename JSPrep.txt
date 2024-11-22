@@ -18,6 +18,7 @@
 	provides components such as the call stack, callback queue, event loop and makes use of the web APIs 
 	provided by the web browser and augments Javascript to create its multithreading illusion.
 
+
 3) A) what are the coercion available in javascript?
 	coercion refers to the automatic or implicit conversion of values from one type to another. 
 	There are two types of coercion:
@@ -72,6 +73,14 @@
 
 		const data = apply(multiply, 5)
 		console.log(data)
+
+6) A) How can you create object in javascript?
+	Object literal: {} – most common and simple method.
+	new Object(): Less common, creates an empty object.
+	Constructor function: Creates an object blueprint with reusable properties and methods.
+	Classes: ES6 way to create objects with cleaner syntax and inheritance support.
+	Object.create(): Creates an object using another object as a prototype.
+	Map: A modern data structure for key-value pairs that can use any type as keys.
 
 
 7) What is the currying function?
