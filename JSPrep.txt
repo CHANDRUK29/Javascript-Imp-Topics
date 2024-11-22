@@ -385,6 +385,52 @@ myBankAccount.deposit(500);
 	which instructs the browser to only allow content from trusted sources.
 
 
+33) what is minification in javascript?
+	JavaScript minification is the process of reducing the size of JavaScript files by removing unnecessary 
+	characters and whitespace, without affecting the functionality of the code. It helps improve the performance 
+	of web pages by reducing the amount of data transferred over the network, which leads to faster load times.
+
+34) What is Design Patterns ?
+
+	Design patterns are typical solutions to commonly occurring problems in software design
+	Design patterns are not finished code but templates or blueprints only.
+
+	Types of Design Patterns:
+
+	Creational Patterns: Deal with object creation mechanisms, making it more flexible and dynamic.
+	Examples:
+	Singleton: Ensures a class has only one instance.
+	Factory Method: Creates objects, but allows subclasses to decide which class to instantiate.
+	Abstract Factory: Creates families of related objects without specifying concrete classes.
+	Builder: Constructs complex objects step by step.
+	Prototype: Creates new objects by copying an existing object.
+
+	Structural Patterns: Focus on how to assemble classes or objects to form larger structures.
+	Examples:
+	Adapter: Converts one interface to another.
+	Bridge: Separates abstraction from implementation.
+	Composite: Treats individual objects and compositions of objects uniformly.
+	Decorator: Adds functionality to objects dynamically.
+	Facade: Provides a simplified interface to a complex subsystem.
+	Flyweight: Reduces memory usage by sharing common objects.
+	Proxy: Controls access to an object.
+
+	Behavioral Patterns: Concern how objects interact and communicate with each other.
+	Examples:
+	Observer: Notifies dependent objects when an object changes state.
+	Strategy: Defines a family of algorithms and allows the client to choose one.
+	Command: Encapsulates a request as an object.
+	State: Changes an object’s behavior based on its internal state.
+	Iterator: Iterates over a collection without exposing its structure.
+	Template Method: Defines the steps of an algorithm but lets subclasses override certain parts.
+	Chain of Responsibility: Passes a request along a chain of handlers.
+	Memento: Captures the state of an object for later restoration.
+	Mediator: Centralizes communication between objects to reduce dependencies.
+	Visitor: Allows operations to be added to existing class hierarchies.
+			
+
+
+
 
 
 
