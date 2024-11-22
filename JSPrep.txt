@@ -12,6 +12,18 @@
 	while Node is a runtime environment that allows JavaScript to be executed on the server side.
 
 
+2) A) Features of ES6:
+	Introduction of let and const
+	arrow functions
+	Template Literals
+	Destructring
+	Rest and Spread Operators
+	Class
+	Modules
+	Promises
+	Map and Set
+
+
 3) Is JavaScript is single threaded or multithreaded Why?
 	JavaScript is a single threaded non-blocking asynchronous programming language. 
 	Javascript itself is a single threaded language, Javascript engines such as the V8 engine 
