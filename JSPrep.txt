@@ -429,8 +429,9 @@ myBankAccount.deposit(500);
 	Visitor: Allows operations to be added to existing class hierarchies.
 			
 
-
-
+35) Library vs Framework?
+	library is a collection of functions or tools you call to solve specific problems, while
+	framework provides an overall structure for your application and dictates how the code should be written.
 
 
 
