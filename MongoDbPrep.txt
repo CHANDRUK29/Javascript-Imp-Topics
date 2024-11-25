@@ -271,7 +271,7 @@
 
 
 32) What Is MongoDb Transactions?
-    MongoDB transactions provide a way to group multiple operations into an atomic unit of work, 
+    MongoDB transactions provide a way to group multiple operations into an single unit of work, 
     ensuring data consistency, integrity, and rollback capabilities. They are essential for use 
     cases that require multiple operations to be executed as a single unit, such as banking systems,
     e-commerce applications, and other business-critical applications.
