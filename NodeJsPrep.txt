@@ -233,7 +233,7 @@
 
 
 32) Explain the concept of stub in Node.js?
-	Stubs are simply functions that are used to write test cases to verify the working piece of code.
+	Stubs are simply functions that are used to assess and analyze individual component behaviour
 
 
 33) What is Libuv?
