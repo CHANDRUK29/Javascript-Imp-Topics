@@ -129,7 +129,8 @@
 	execFile(): Directly executes a file without a shell, which is more efficient than exec()
 	for simple scripts or commands.
 	spawn(): Launches a new process with a given command, providing streams for stdin, stdout, and stderr.
-	fork(): A specialized version of spawn() specifically designed to spawn new Node.js processes and establish a 		communication channel between the parent and child.
+	fork(): A specialized version of spawn() specifically designed to spawn new Node.js processes and establish a
+	communication channel between the parent and child.
 
 
 18) What is the difference between fork() and spawn() methods in Node.js?
