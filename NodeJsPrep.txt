@@ -443,6 +443,11 @@
 	Content Security Policy (CSP)
 
 
+59) what is the use of Process object ?
+	The process object is a crucial part of Node.js applications, providing essential tools for 
+	interacting with the system, managing environment variables, handling input/output, and controlling 
+	the behavior of the application.
+
 
 
 
