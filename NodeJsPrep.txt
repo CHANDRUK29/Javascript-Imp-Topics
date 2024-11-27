@@ -456,6 +456,15 @@
 	continuous data (like reading large files, network responses, or streaming content).
 
 
+61) How do you manage memory leaks in Node.js applications?
+	Monitoring memory usage over time using tools like process.memoryUsage() and Chrome DevTools.
+	Taking heap snapshots to identify memory allocation issues.
+	Ensuring event listeners are removed when no longer needed.
+	Minimizing global variables and unnecessary closures.
+	Managing database connections properly.
+	Using Node.js garbage collection and profiling tools to detect leaks.
+	
+
 
 ================================================********************************============================================
 
