@@ -186,6 +186,45 @@ what is React Js?
 
 
 
+11) What is Kubernetes ?
+	Kubernetes is a container orchestration platform.It helps you to manage contanerized applications in different
+	deployment environments. It is primarily used to manage and automate the deployment,scaling, and operation of
+	containerized applications.
+
+	Features : 
+		Container Management
+		High Availablity - No downtime
+		Scalabilty - High Performance
+		Disaster Recovery - Backup and restore
+
+12) What is Jenkins ?
+	Jenkins is a continuous integration and continuous delivery (CI/CD) automation server.Jenkins is used to automate 
+	the process of building, testing, and deploying code. It runs jobs or pipelines, which can automate tasks such 
+	as pulling code from a version control system, running tests, building the application, and deploying it to various environments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================*************************************===========================================================
 
 
 
