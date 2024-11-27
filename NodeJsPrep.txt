@@ -448,7 +448,12 @@
 	interacting with the system, managing environment variables, handling input/output, and controlling 
 	the behavior of the application.
 
+60) Streams VS Buffer ?
+	Buffers are used when you need to store and process the entire data at once, typically for 
+	small to moderate-sized data.
 
+	Streams allow you to handle data in small chunks, making them ideal for large or 
+	continuous data (like reading large files, network responses, or streaming content).
 
 
 
