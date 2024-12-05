@@ -86,16 +86,13 @@
     function getData() {
         console.log('hello1')
     }
-
     var getData1 = () => {
         console.log('hello2')
     }
-
     const getData2 = () => {
         console.log('hello3')
     }
-
-OP >>
+    OP >>
     hello1
     TypeError: getData1 is not a function (whenever we declare a variable with var it will hoisted and assigned a undefined as value so it is throwing type error)
     ReferenceError: Cannot access 'getData1' before initialization (let and const will throw error as we are accessing it before intialization)
@@ -180,3 +177,14 @@ OP >>
     
     let foreach = arr.forEach((item)=>{if(item>3)return item})
     console.log(foreach) // undefined (as for each will not return anything)
+
+
+
+
+
+
+
+
+
+
+==============================**************************=========================================
