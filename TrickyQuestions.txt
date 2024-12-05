@@ -27,3 +27,49 @@
 5)  console.log(5<'15'<5) // true (due to type coresion 15 is converted to number(5<15)=1 and (1<5)=true)
     console.log(7<'15'<7) // true (due to type coresion 15 is converted to number(7<15)=1 and (1<5)=true)
     console.log(7<'85'>5) // false (due to type coresion 85 is converted to number(7<85)=1 and (1>5)=false)
+
+
+6)  console.log(1)
+    setTimeout(()=>{
+        console.log(2)
+    },1000)
+    setTimeout(()=>{
+        console.log(3)
+    })
+    console.log(4)
+
+    OP =>
+        1
+        4
+        3
+        2
+    Promises will moved to microtask queue and settimeout will be moved to task queue
+
+
+7)  num = 6;
+    console.log(num); // ReferenceError: Cannot access 'num' before initialization 
+    let num;
+
+
+8) console.log(typeof typeof 1) // string (because typeof 1 ="number" which is in string (typeof "number") = string)
+
+
+9)  const a = 5
+    const b = new Number(5)
+    console.log(a==b) // it will check only the value
+    console.log(a===b) // it will check data type also (here new keyword will create object so (Number = object) == false)
+
+
+10) let promise1 = new Promise((res, rej) => {
+        setTimeout(res, '500', 'one')
+    })
+    let promise2 = new Promise((res, rej) => {
+        setTimeout(res, '100', 'two')
+    })
+    
+    Promise.race([promise1, promise2]).then((res) => {
+        console.log(res)
+    })
+    
+    OP => two (Promise.race will wait for any one of the promise to either resolve or reject)
+
