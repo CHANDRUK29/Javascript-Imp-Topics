@@ -118,9 +118,9 @@ OP >>
     OP>> 
         1
         3
-
 (It is because try block will be executed due to return it will exit from function not completely it will execute finally block even though there is a return statement)
     
+
 
 14) console.log([] == []) // false (since array are refrence type it will be stored in different memory locations so when comapring the location it will return false)
     console.log([] == ![]) // true
@@ -138,3 +138,45 @@ OP >>
         3
         3
 (since var is function scope and set timeout is asynchronous it will take time to complete so for loop will run and index will be 3 and the settimout will be called)
+
+
+16) let x ="1"
+    let y = "Aravind"
+    console.log(typeof +x) // Number (due to type coercion string is converted to number)
+    console.log(typeof +y) // Number (due to type coercion string is converted to number (since it is alphabets when try to convert it return NaN which is a number))
+
+
+17) function test(){
+    let x=10
+    if(true){
+        let x = 20
+    }
+    console.log(x)
+    }
+    test() // 10 (by default it will check for variables in its scope so x=10)
+
+
+
+18) const employeeData = {
+        name: 'chandru',
+        skills: "NodeJs"
+    }
+    
+    Object.seal(employeeData);
+    employeeData.name = "Test"
+    employeeData.age=25
+    delete employeeData.skills
+    console.log(employeeData) 
+    // OP =>{ name: 'Test', skills: 'NodeJs' } (Object.seal() will never allow you to add new property and delete existing property also)
+
+
+19) let arr = [1,2,3,4,5]
+    
+    let map = arr.map((item)=>{if(item>3)return item})
+    console.log(map) // [ undefined, undefined, undefined, 4, 5 ]
+    
+    let filter = arr.filter((item)=>{if(item>3)return item})
+    console.log(filter) //[4,5]
+    
+    let foreach = arr.forEach((item)=>{if(item>3)return item})
+    console.log(foreach) // undefined (as for each will not return anything)
