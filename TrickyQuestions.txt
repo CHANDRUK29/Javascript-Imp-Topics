@@ -1,6 +1,7 @@
-// Tricky Question with Answers
+// Tricky Questions in javascript
 
 
+/*
 1)  let a = 5
     let b = a++;
     console.log(a + b)
@@ -27,7 +28,6 @@
 5)  console.log(5<'15'<5) // true (due to type coresion 15 is converted to number(5<15)=1 and (1<5)=true)
     console.log(7<'15'<7) // true (due to type coresion 15 is converted to number(7<15)=1 and (1<5)=true)
     console.log(7<'85'>5) // false (due to type coresion 85 is converted to number(7<85)=1 and (1>5)=false)
-
 
 6)  console.log(1)
     setTimeout(()=>{
@@ -86,13 +86,16 @@
     function getData() {
         console.log('hello1')
     }
+
     var getData1 = () => {
         console.log('hello2')
     }
+
     const getData2 = () => {
         console.log('hello3')
     }
-    OP >>
+
+OP >>
     hello1
     TypeError: getData1 is not a function (whenever we declare a variable with var it will hoisted and assigned a undefined as value so it is throwing type error)
     ReferenceError: Cannot access 'getData1' before initialization (let and const will throw error as we are accessing it before intialization)
@@ -115,9 +118,9 @@
     OP>> 
         1
         3
+
 (It is because try block will be executed due to return it will exit from function not completely it will execute finally block even though there is a return statement)
     
-
 
 14) console.log([] == []) // false (since array are refrence type it will be stored in different memory locations so when comapring the location it will return false)
     console.log([] == ![]) // true
@@ -180,6 +183,51 @@
 
 
 
+20) const name = "chandru"
+    age = 24
+    
+    console.log(delete name); // false (as we know delete is used to delete property in object but it will not able to delete variables declares with[var,let,const])
+    console.log(delete age); // true (it returns true because age is declared as a global object so it can be deleted)
+
+
+21) let newList = [1].push(2)
+    
+    console.log(newList.push(3)) // TypeError (whenever we use push method in array it will not return array instead it 
+    //  will return length of array,so when you try to again use push method there it will throw type error)
+
+  
+
+22) const a = {}
+    const b = { key: "b" }
+    const c = { key: "c" }
+    
+    // each object should have a key in either(string or symbols in it) when we declare an object key
+    // using object itself it will become a["object object"] key
+    
+    a[b] = 146; // here how this will represent is a["object object"] = 146;
+    a[c] = 286; // here also same a["object object"] = 286;
+    console.log(a[b]); // 286 (so when we are accesing the a[b] which is a["object object"] =286 as its updated value)
+ 
+  
+    
+23) const a = {
+        count: 0
+    }
+    const b = a; // as we are doing shallow copy here both will be pointing to same memory location
+    b.count = a.count++ // here it is postincrement operator is used so first 0 will be returned and next it will be incremented 
+    console.log(b.count, a.count); //[OP] => 0 0
+
+
+
+24) const arr = [1, 2, 3]
+    const str = "1,2,3"
+    
+    console.log(arr == str) // True (due to loose equality operator it will try to check both variables in common data type
+    // here array is converted to string when we use "==" operator)
+
+
+    
+*/
 
 
 
@@ -187,4 +235,7 @@
 
 
 
-==============================**************************=========================================
+
+
+
+=============================================*******************************===========================================
