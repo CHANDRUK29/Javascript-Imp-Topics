@@ -239,7 +239,7 @@
 
 33) What is Libuv?
 	Libuv is a widely used library used in node js. It is used to complement the asynchronous I/O functionality of node js.
-	It supports very good file system movement handling methodologies.
+	It handles services like File System, DNS, network, child processes, pipes etc..
 
 
 34) Why is assert used in Node.js?
