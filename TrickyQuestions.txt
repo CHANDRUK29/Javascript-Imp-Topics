@@ -243,6 +243,14 @@ OP >>
     // here array is converted to string when we use "==" operator)
 
 
+25) {} + []   // 0
+    [] + {}   // '[object Object]'
+
+    In the first expression, {} is interpreted as an empty code block and + [] converts [] to a number. 
+    Empty arrays are always coerced to 0. 
+    In the second expression, both operands are converted to a string. Array is converted to an empty 
+    string '', while the object is converted to '[object Object]'. Finally, '' + '[object Object]' 
+    evaluates to '[object Object]'.
     
 */
 
