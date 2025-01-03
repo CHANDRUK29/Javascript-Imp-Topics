@@ -279,6 +279,19 @@ OP >>
     passed as arguments to function so when null+20 is added due to coresion null will be converted to 0 so 0+20 = 20
 
 
+28) const arrA = [1, 2, 3];
+    const arrB = arrA.slice();
+    arrB[0] = 0;
+    console.log(arrA);
+
+    OUTPUT: [1,2,3];
+    EXPLANATION : Usually when are assigning a exitsing array it will be copied as shallow copy so they will reference
+    to same memory location. but in arrB we are using slice() function. slice function will return a new array so it will be
+    referencincg different memory location so arrA and arrB are referencincg two different memory location so
+    changing arrB will not reflect on arrA.
+
+    
+
 */
 
 
