@@ -269,8 +269,16 @@ OP >>
     as function it will be treated as variable so we will get type TypeError
 
 
+27)function add(a = 5, b = 7) {
+      console.log(a + b);
+    }
+    add(null, 20);
 
-    
+    OUTPUT: 20
+    EXPLANATION : In Javascript default parameter is used only when no value is passed or undefined value instead
+    passed as arguments to function so when null+20 is added due to coresion null will be converted to 0 so 0+20 = 20
+
+
 */
 
 
