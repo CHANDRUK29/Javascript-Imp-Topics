@@ -252,6 +252,25 @@ OP >>
     string '', while the object is converted to '[object Object]'. Finally, '' + '[object Object]' 
     evaluates to '[object Object]'.
     
+
+26) var x = 1;
+    console.log(x);
+    function x() {
+      console.log("2");
+    }
+    x();
+
+    OUTPUT:
+        1
+        TypeError
+
+    Explanation: function declaration will first hoisted and then variable declaration will be hoisted
+    due to this variable declaration will be on top therefore x=1 on invoking x() function it will not be considered
+    as function it will be treated as variable so we will get type TypeError
+
+
+
+    
 */
 
 
