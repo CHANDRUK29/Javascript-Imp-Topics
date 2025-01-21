@@ -1,3 +1,12 @@
 1) What is React?
-    React is a popular javascript front end library used for developing responsive web pages.
-    It was developed by facebook.
+    React is a open-source, component based frontend library which is responsible
+    for view layer of the application. It was initially developed by facebook.
+    Main objective of react is to develop user interfaces that improves the speed
+    of the apps.
+
+1) A) Features of React:
+        Virtual Dom
+        JSX
+        One Way Data Binding
+        Component Based Architecture
+        Resuable Components
