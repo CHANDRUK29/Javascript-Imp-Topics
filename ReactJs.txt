@@ -10,3 +10,6 @@
         One Way Data Binding
         Component Based Architecture
         Resuable Components
+
+2) What is JSX?
+    JSX is a Javascript XML
