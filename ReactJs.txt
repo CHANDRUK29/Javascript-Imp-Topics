@@ -12,4 +12,4 @@
         Resuable Components
 
 2) What is JSX?
-    JSX is a Javascript XML
+    JSX stands for JavaScript XML and it is an XML-like syntax extension to ECMAScript. 
