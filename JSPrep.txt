@@ -434,6 +434,17 @@ myBankAccount.deposit(500);
 	framework provides an overall structure for your application and dictates how the code should be written.
 
 
+36) Debouncing vs Throttling?
+
+	Debouncing ensures a function is only called after a certain amount of time has passed since the last time it was invoked.
+	🧠 Use case:
+		You want to run a search API after the user stops typing.
+		You want to resize elements after the user finishes resizing the window.
+
+	Throttling ensures a function is called at most once every specified interval, regardless of how many times the event is triggered.
+	🧠 Use case:
+		You want to handle scroll events or mouse movements but limit how often your function runs.
+		For example, update scroll position UI every 200ms even if the scroll event fires 60 times a second.
 
 
 
