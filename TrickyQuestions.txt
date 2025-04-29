@@ -292,8 +292,19 @@ OP >>
 
     
 
+29) console.log("a")
+    setTimeout(() => {
+    console.log("set")
+    }, 0);
+    Promise.resolve(()=>console.log("promise")).then((res)=>res());
+    console.log("b")
 
-
+    OP: a
+        b
+        promise
+        set
+        [As we know console will be logged first then promise has the highest priority as it will be moved to 
+        microtask queue so it will be executed first instead of setTimeout]
 */
 
 
