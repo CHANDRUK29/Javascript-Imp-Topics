@@ -467,6 +467,20 @@
 	Using Node.js garbage collection and profiling tools to detect leaks.
 	
 
+62) What is REST?
+	REST (Representational State Transfer) is an architectural style for building web services. 
+	It relies on standard HTTP methods to perform operations on resources, which are represented by 
+	URLs (Uniform Resource Locators). REST is stateless and uses standard HTTP features such as methods, 
+	status codes, and headers to handle client-server communication.
+
+
+63) What is GraphQL?
+	GraphQL is a query language for APIs and a runtime for executing those queries with a type system you define 
+	for your data. Unlike REST, GraphQL allows clients to specify exactly what data they need, which makes 
+	it highly efficient for client-side applications.
+
+
+
 
 ================================================********************************============================================
 

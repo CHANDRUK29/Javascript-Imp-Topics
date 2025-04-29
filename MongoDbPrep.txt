@@ -45,8 +45,7 @@
     Sharding is a type of database partioning in which large database is divided or partitioned into 
     smaller data and different nodes. These shards are not only smaller but also faster.
 
-    Sharding is the process of splitting data up across machines. We also use the term "partioning".
-    we can store more data and handle more load without requiring large or more powerful machines.
+    Sharding is the process of splitting data up across machines.
 
 
 7) How does MongoDB store data?

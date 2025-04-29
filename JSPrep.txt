@@ -434,7 +434,43 @@ myBankAccount.deposit(500);
 	framework provides an overall structure for your application and dictates how the code should be written.
 
 
+36) Debouncing vs Throttling?
 
+	Debouncing ensures a function is only called after a certain amount of time has passed since the last time it was invoked.
+	🧠 Use case:
+		You want to run a search API after the user stops typing.
+		You want to resize elements after the user finishes resizing the window.
+
+	Throttling ensures a function is called at most once every specified interval, regardless of how many times the event is triggered.
+	🧠 Use case:
+		You want to handle scroll events or mouse movements but limit how often your function runs.
+		For example, update scroll position UI every 200ms even if the scroll event fires 60 times a second.
+
+
+
+37) SOLID Principles:
+	SOLID is an acronym representing five principles of object-oriented programming and software design. 
+	These principles are intended to make software more maintainable, scalable, and easier to understand. 
+	Here's what SOLID stands for:
+
+	S - Single Responsibility Principle (SRP):
+	A class should have only one reason to change, meaning it should only have one responsibility or purpose. 
+	This makes code more modular and easier to maintain.
+
+	O - Open/Closed Principle (OCP):
+	Software entities (classes, modules, functions) should be open for extension but closed for modification. 
+	You should be able to add new functionality without altering existing code, often achieved via inheritance or interfaces.
+
+	L - Liskov Substitution Principle (LSP):
+	Subtypes must be substitutable for their base types without altering the correctness of the program.
+
+	I - Interface Segregation Principle (ISP):
+	Clients should not be forced to depend on interfaces they do not use. Instead, create smaller, more specific 
+	interfaces tailored to particular needs.
+
+	D - Dependency Inversion Principle (DIP):
+	High-level modules should not depend on low-level modules; both should depend on abstractions. 
+	This reduces coupling and promotes flexible, reusable code.
 
 
 
