@@ -135,11 +135,17 @@
 	classes are moved to the top of their scope before code execution.
 
 
-12) what is Closures?
+12) A) what is Closures?
 	A closure is the combination of a function bundled(enclosed) together with its 
 	lexical environment within which that function was declared.
 
 	Ability Of a function to remember the variables and functions that are declared in its outer scope.
+
+
+12) B) CALL VS APPLY VS BIND
+		*)Call invokes the function immediately and allows you to pass in arguments one by one.
+		*)Apply invokes the function immediately and allows you to pass in arguments as an array.
+		*)Bind returns a new function, and you can invoke/call it anytime you want by invoking a function.
 
 
 13) What are classes in ES6 ?
